@@ -1,576 +1,969 @@
-<!DOCTYPE HTML>
-<!--
-	Photon by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<!-- Global Site Tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-107276736-1"></script>
-		<script>
-  			window.dataLayer = window.dataLayer || [];
-  			function gtag(){dataLayer.push(arguments)};
-  			gtag('js', new Date());
+<!doctype html>
+<html class="" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pai Lab @ UMMS</title>
+    
+    <!--    stylesheets   -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/foundation.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Raleway:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="js/DataTables/datatables.css"/>
+    <link rel="stylesheet" href="css/tipped.css" />
 
-  			gtag('config', 'UA-107276736-1');
-		</script>
 
-		<title>Pai Lab @ UMMS</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-	</head>
-	<body>
 
-		<!-- Header -->
-			<section id="header">
-				<div class="inner">
-					<!--<span class="icon major fa-cloud"></span>-->
-					<br>
-					<br>
-					<br>
-					<h1><strong>THE PAI LAB</strong><br /></h1>
-					<p><strong>@ University of Massachusetts Medical School<br>
-						opening January 2018</strong></p>
-					<ul class="actions">
-						<li><a href="#welcome" class="button scrolly">WELCOME</a></li>
-					</ul>
-				</div>
-			</section>
+  </head>
+  
+  <body>
 
-		<!-- One -->
-			<section id="welcome" class="main style1">
-				<div class="container">
-					<div class="row 150%">
-						<div class="6u 12u$(medium)">
-							<header class="major">
-								<h2><i>The Kinetics of Gene Regulation</i></h2>
-							</header>
-							<p style="text-align:justify">Welcome to the <b>Pai Lab</b> in the <a href="https://www.umassmed.edu/rti/">RNA Therapeutics Institute</a> at the University of Massachusetts Medical School. We study the speed and efficiency at which RNA molecules are created and processed to ensure proper cellular functions. </p>
-							<p style="text-align:justify"> Our lab combines high-dimensional computational analyses with state-of-the art genetic, molecular, and cellular genomics techniques to probe mechanisms of RNA maturation. We are looking for enthusiastic researchers interested in experimental and/or computational biology to <a href="#people"><strong>JOIN US</strong>!</a></p>
-						</div>
-						<div class="6u$ 12u$(medium) important(medium)">
-							<span class="image fit"><img src="images/kineticsfig-13.png" alt="" /></span>
+  <!-- ********** SIDE BAR  ********** -->
+
+	  <div id="sidenav" class="sidenav">
+	    <ul class="side-nav">
+	      <li class="divider"></li>
+	      <li><a href="#"><b>Internal Links</b></a></li>
+	      <li><a href="https://sites.google.com/site/pailabummswiki/">Lab Wiki</a></li>
+	      <li><a href="#">Lab Calendars</a></li>
+	      <li><a href="https://benchling.com/organizations/pailab-umms/projects">Benchling Notebook</a></li>
+	      <li><a href="https://pailab-umms.slack.com/">PaiLab Slack</a></li>
+	      <!-- <li><a href="#">Vestibulum mauris</a></li> -->
+	      <!-- <li><a href="#">enim, laoreet</a></li> -->
+	      <!-- <li><a href="#">vel lobortis nec</a></li> -->
+	      <!-- <li><a href="#">ullamcorper sit amet ligula</a></li> -->
+	    </ul>
+	  </div>
+
+  <!-- ********** TOP BAR ********** -->
+	  <header>
+	    <div class="row">
+	      <div class="contain-to-grid sticky">
+	        <nav class="top-bar" data-topbar role="navigation" data-options="sticky_on: large">
+	          <ul class="title-area">
+	            <li class="name">
+	              <a href="#" class="logo">
+	                <h1>pai<span class="tld">lab</span></h1>
+	              </a>
+	            </li>
+	              <span class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></span>
+	            </li>
+	          </ul>
+	          <section class="top-bar-section" id="main-nav">
+	            <ul class="right">
+	              <li><a href="#about">about</a></li>
+	              <li><a href="#research">research</a></li>
+	              <li><a href="#members">people</a></li>
+	              <li><a href="#publications">publications</a></li>
+	              <li><a href="#contact">contact</a></li>
+	              <li>
+	                <a href="#">
+	                  <div class="hamburger hamburger--minus" type="">
+	                    <span class="hamburger-box">
+	                      <span class="hamburger-inner"></span>
+	                    </span>
+	                  </div>
+	                </a>
+	              </li>
+	            </ul>
+	          </section>
+	        </nav>
+	      </div>
+	    </div>
+	  </header>
+
+  <!-- ********** FRONT PAGE ********** -->
+	  <div id="main">
+	    <section class="splash">
+	      <section class="caption">
+	        <div class="row">
+	          <img src="images/kineticsfig-13.png" class="th" style="float:center; width:50%; margin-left:1rem; box-shadow:none">
+	          <!--<h1 class="splash-text">the pai lab</h1>-->
+	          <h2 class="splash-subtext">the <span class="emph">pai lab</span></h2>
+	        </div>
+	      </section>
+	    </section>
+
+  <!-- ********** ABOUT WELCOME ********** -->
+		  <section class="about">
+		    <div class="row">
+		      <div class="small-12 columns">
+		        <div class="panel panel-primary" style="background:#ffffff">
+		          <h1 class="section-header"><span class="anchor" id="about"></span>the kinetics of gene regulation</h1>
+		          <div class="row about-boxes">
+
+		           <!-- ********** ABOUT SECTION ********** -->
+		            <div class="small-12 medium-6 large-6 columns">
+		                <h2 class="panel-header">About Us</h2>
+		                <div class="mission-statement">
+		                  <p style="text-align:justify">Welcome to the Pai Lab in the <a href="https://www.umassmed.edu/rti/">RNA Therapeutics Institute</a> at the University of Massachusetts Medical School. We study the speed and efficiency at which RNA molecules are created and processed to ensure proper cellular functions.</p>
+		                  <p style="text-align:justify">Our lab combines high-dimensional computational analyses with state-of-the art genetic, molecular, and cellular genomics techniques to probe mechanisms of RNA maturation. We are looking for enthusiastic researchers interested in experimental and/or computational biology to <a href="pai-lab.org/#join">JOIN US</a>!</p>
+		                </div>
+		            </div>
+		            <!-- ********** NEWS SECTION ********** -->
+		            <div class="small-12 medium-3 large-3 columns">
+		                <h2 class="panel-header">news</h2>
+		                <div class="news">
+		                  <p style="text-align:justify"><b>Jan18</b> Nida Javeed joins as our first lab member. Welcome Nida!</p>
+		                  <p style="text-align:justify"><b>Jan18</b> The Pai Lab is officially open! Plenty of boxes to be unpacked and files to be moved!</p>
+		                  <!--<p class="redacted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat urna vel nunc accumsan, at porttitor neque posuere. Proin in fringilla dui. Curabitur sit amet semper erat. Mauris elementum fringilla magna egestas pulvinar. Cras vehicula aliquet aliquam. Mauris ipsum erat, molestie id consectetur ut, pulvinar at sapien. Nulla erat justo, accumsan nec velit nec, eleifend eleifend est. Aliquam commodo tristique neque nec hendrerit. Ut nec metus enim. Ut quis fringilla lacus. Etiam hendrerit blandit lectus vitae maximus. Sed vulputate justo a leo tincidunt.</p> -->
+		                </div>
+		            </div>
+
+		            <!-- ********** TWITTER *********** -->
+		            <div class="small-12 medium-3 large-3 columns">
+		                <h2 class="panel-header">twitter</h2>
+		                <div class="twitter">
+		                  <a class="twitter-timeline" data-lang="en" data-theme="dark" data-link-color="#19CF86" href="https://twitter.com/athmapai?ref_src=twsrc%5Etfw">Tweets by athmapai</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+		                </div>
+		            </div>
+		          </div>
+		        </div>
+		      </div>
+		  </section>
+
+  <!-- ********** RESEARCH ********** -->
+	    <section class="research">
+	      <div class="row">
+	        <div class="small-12 columns">
+	          <h1 class="section-header"><span class="anchor" id="research"></span>research</h1>
+	          <ul class="tabs" data-tab>
+	            <li class="research-tab tab-title active"><a href="#researchA">Kinetics of mRNA processing</a></li>
+	            <li class="research-tab tab-title"><a href="#researchB">Dynamics of mRNA processing</a></li>
+	            <!--<li class="research-tab tab-title"><a href="#researchC" style="font-family: 'redacted';">consectetur</a></li> -->
+	            <!--<li class="research-tab tab-title"><a href="#researchD" style="font-family: 'redacted';">adipiscing elit</a></li> -->
+	          </ul>
+	          <div class="tabs-content">
+
+	          <!-- ********** RESEARCH TAB 1 ********** -->
+	            <div class="content active" id="researchA">
+	              <img src="images/research/rates_fig3_circplot.tiff" class="th" style="float:right; width:35%; margin-left:1rem;">
+	              <div class="panel caption text-center" style="float:right; width:35%; margin-left:1rem;">Distribution of mean splicing half-lives across bins of RIME (<i>θ axis</i>) and deciles of joint intron and exon lengths (<i>r axis</i>). While 60-70nt introns are spliced more efficiently, putative exon-defined introns are spliced faster than intron-defined introns in flies. <a href="#citenote-a1" class="citation">[1]</a></div>
+	              <p class="research-content">Phenotypic variation in humans is driven by coordinated changes in gene regulation that allow a continuum of gene expression levels to arise from the same genome sequence. Recent studies have provided unprecedented insight into how individual molecular mechanisms regulate changes in mRNA levels and revealed that substantial transcriptome diversity arises from the differential processing of nascent RNAs. Many studies of gene expression focus on characterizing steady-state mRNA levels, even though living systems are inherently dynamic. Thus, a key unanswered question underlying functional genomics is: how do the dynamics of individual molecular processes combine to influence the cellular transcriptome?</p>
+	              <p class="research-content">Our lab seeks to answer this question by investigating how the kinetics of disparate steps of gene regulation are regulated synergistically to influence steady-state mRNA levels. In particular, we focus on characterizing the speed and efficiency of essential steps in the life-cycle of an RNA molecule - transcriptional elongation, pre-mRNA splicing, and cleavage and polyadenylation - to profile how these steps are coordinated to create mature mRNA molecules. We do this using a experimental techniques to isolate newly created nascent RNA, followed by high-throughput sequencing and computational and mathematical modeling approaches to simultaneously measure the rates of each RNA processing step along a gene body. Genome-wide measurements provide us with the ability to learn about the cellular logic and regulatory grammer involved in efficient RNA processing. We have previously used these methods to study the rates of mRNA splicing in flies, which provided insights about genomic features that influence variability in rates and mechanistic choices made during intron recognition for mRNA splicing.</p>
+	              <!--<img src="https://unsplash.it/360?image=12" class="th" style="float:left; width:35%; margin-right:1rem;">-->
+	              <!--<div class="panel caption text-center redacted" style="float:left; width:35%; margin-right:1rem;">Using model Au catalysts, the complex heterogeneity in CO surface binding equilibria and the differential proton coupling requirements for CO vs. H<sub>2</sub> production on Au surfaces can be uncovered.<a href="#citenote-a2" class="citation">[2]</a></div>-->
+	              <div class="panel citations">
+	                <p id="citenote-a1">[1] <a href="https://elifesciences.org/articles/32537">(view)</a> The kinetics of pre-mRNA splicing in the <i>Drosophila</i> genome and the influence of gene architecture.  <u>Pai AA</u>, Henriques T, McCue K, Burkholder A, Adelman K, Burge CB. <i>eLife</i> <b>2017</b>, <i>6</i>, e32537</p>
+	                <!--<p id="citenote-a2">[2] <a href="#">(view)</a> Inhibited proton transfer enhances Au-catalyzed CO2-to-fuels selectivity. Wuttig, A.; Yaguchi, M; Motobayashi, K.; Osawa, M.; Surendranath, Y. <i>Proc. Natl. Acad. Sci. U. S. A.</i>, <b>2016</b>, E4585–E4593</p>-->
+	              </div>
+	            </div>
+
+	          <!-- ********** RESEARCH TAB 2 ********** -->
+	            <div class="content" id="researchB">
+	              <img src="images/research/infection_fig2_boxplots.png" class="th" style="float:left; width:60%; margin-right:1rem;">
+	              <div class="panel caption text-center" style="float:left; width:60%; margin-right:1rem;">Distribution of deltaPSI values for each RNA processing category after infection with either <i>Listeria</i> or <i>Salmonella</i> bacteria. Negative values represent less inclusion, while positive values represent more inclusion, as defined by the schematic exon representations. There are striking global shifts towards increased inclusion of skipped exons and the shortening of 3' UTRs following infection with either bacteria. <a href="#citenote-b1" class="citation">[1]</a></div>
+	              <p class="research-content"> Changes in gene regulation have long been known to play an important role in any cellular response, with many previous studies extensively characterizing transcriptional response pathways. However, post-transcriptional mechanisms, especially those involved in mRNA process and alternative splicing, remain understudied despite gaining prominence as crucial regulators of cellular defense systems. 
+	              <p class="research-content">In collaboration with Luis Barreiro's lab at the University of Montreal, we have been studying the dynamics of transcriptional and post-transcriptional regulation in response to infection by naturally occuring pathogens (<i>Listeria monocytogenes</i> and <i>Salmonella typhimeurium</i>), with a particular focus on investigating the role of mRNA processing during cellular reponses. In an initial study<a href="#citenote-b1" class="citation">[1]</a>, we discovered thousands of changes in isoform usage following infection. Immune response was characterized by specific changes in mRNA splicing and polyadenylation site choice, with global shifts towards increased inclusion of cassette exons and a widespread usage of upstream polyadenylation sites in genes upregulated after infection. Favoring shorter 3' UTRs after infection likely allows immune-relevant transcripts to escape repression by miRNAs activated in response to infection. We are continuing work on the mechanisms of mRNA processing dynamics during the immune response and mapping genetic loci that influence inter-individual differences in immune response through mRNA processing pathways.</p>
+	              <p class="research-content">For a broader perspective on the dynamics of mRNA processing, we investigated mRNA processing changes across a panel of cellular responses to environmental and drug stimulii in collaboration with the labs of Francesca Luca and Roger Pique-Regi at Wayne State University<a href="#citenote-b2" class="citation">[2]</a>. Simular to immune response, we see clear signatures of directed shifts in particularly RNA processing mechanisms, in a stimulus-dependent manner. Combined with functional genomic data and knowledge of regulated pathways, we are able to identify <i>trans-</i>acting factors that influence RNA isoform usage, particularly for alternative transcription start sites. Overall, our work clearly demonstrates the ubiquity of post-transcriptional mRNA changes related to gene expression response to the environment, including for key functions like the innate immune response and drug response. </p> 
+	              <!--<img src="https://unsplash.it/720/360?image=16" class="th" style="float:right; width:60%; margin-left:1rem;">-->
+	              <!--<div class="panel caption text-center redacted" style="float:right; width:60%; margin-left:1rem;">Using model Au catalysts, the complex heterogeneity in CO surface binding equilibria and the differential proton coupling requirements for CO vs. H<sub>2</sub> production on Au surfaces can be uncovered.<a href="#citenote-b2" class="citation">[2]</a></div>-->
+	              <div class="panel citations">
+	                <p id="citenote-b1">[1] <a href="http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1006338">(view)</a> Widespread Shortening of 3' Untranslated Regions and Increased Exon Inclusion Are Evolutionarily Conserved Features of Innate Immune Responses to Infection. <u>Pai AA</u>, Baharian G, Sabourin A, Brinkworth JF, Nédélec Y, Foley JW, Grenier J, Siddle KJ, Dumaine A, Yotova V, Johnson ZP, Lanford RE, Burge CB, Barreiro LB. <i>PLOS Genetics</i> <b>2016</b>, <i>12(9)</i>, e1006338</p>
+	                <p id="citenote-b2">[2] <a href="http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1006995">(view)</a> Environmental perturbations lead to extensive directional shifts in RNA processing. Richards AL, Watza D, Findley A, Alazizi A, Wen X, <u>Pai AA</u>, Pique-Regi R, Luca F. <i>PLOS Genetics</i> <b>2017</b>, <i>13(10)</i>, e1006995</p>
+	                <!--<p id="citenote-b2">[2] <a href="#">(view)</a> Inhibited proton transfer enhances Au-catalyzed CO2-to-fuels selectivity. Wuttig, A.; Yaguchi, M; Motobayashi, K.; Osawa, M.; Surendranath, Y. <i>Proc. Natl. Acad. Sci. U. S. A.</i>, <b>2016</b>, E4585–E4593</p>-->
+	              </div>
+	            </div>
+
+	          <!-- ********** RESEARCH TAB 3 ********** -->
+	             <!--<div class="content" id="researchC">
+	              <img src="https://unsplash.it/480?image=21" class="th" style="float:left; width:35%; margin-right:1rem;">
+	              <div class="panel caption text-center redacted" style="float:left; width:35%; margin-right:1rem;">Using model Au catalysts, the complex heterogeneity in CO surface binding equilibria and the differential proton coupling requirements for CO vs. H<sub>2</sub> production on Au surfaces can be uncovered.<a href="#citenote-c1" class="citation">[2]</a></div>
+	              <p class="research-content redacted">Etiam viverra vitae justo sit amet congue. Pellentesque in ultrices ligula, vitae elementum massa. Nullam vulputate diam erat, non imperdiet nisl sagittis ut. Pellentesque faucibus, libero et egestas rutrum, sem orci cursus neque, sed luctus ligula tellus sit amet neque. Praesent porttitor imperdiet molestie. Sed euismod dui sit amet turpis euismod aliquam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas lacus erat, dapibus vel urna sed, elementum scelerisque ex. Ut suscipit lacus commodo augue cursus maximus. Donec metus ligula, ultricies nec commodo sagittis, maximus vitae turpis. Etiam velit arcu, tincidunt sit amet metus quis, vulputate mollis enim. Integer id malesuada diam. Phasellus risus lacus, vestibulum nec rutrum vitae, euismod quis erat.</p>
+	              <p class="research-content redacted">Cras eu malesuada quam. Sed quis nisi rhoncus, euismod tortor sed, vestibulum massa. Mauris enim metus, posuere id volutpat vitae, interdum vitae erat. Etiam non consequat metus. Fusce libero tellus, sodales tincidunt erat ac, aliquam gravida sapien. Fusce posuere rutrum elit, vitae luctus sapien. Donec magna leo, porta vel lorem sed, porta blandit dolor. Cras interdum viverra ex. Ut massa leo, convallis non erat sed, facilisis ultricies ligula. Vivamus mauris enim, tempor ac mollis eget, vehicula a velit. Vivamus ornare augue vitae libero vulputate, vitae posuere arcu rutrum. Aenean purus augue, imperdiet non leo commodo, lacinia efficitur risus. Praesent id lobortis velit. Nunc bibendum felis nec massa suscipit, eu condimentum turpis iaculis. Duis non semper sem, in lobortis nibh.</p>
+	              <img src="https://unsplash.it/720?image=15" class="th" style="float:right; width:40%; margin-left:1rem;">
+	              <div class="panel caption text-center redacted" style="float:right; width:40%; margin-left:1rem;">Using model Au catalysts, the complex heterogeneity in CO surface binding equilibria and the differential proton coupling requirements for CO vs. H<sub>2</sub> production on Au surfaces can be uncovered.<a href="#citenote-c2" class="citation">[2]</a></div>
+	              <p class="research-content redacted">Etiam viverra vitae justo sit amet congue. Pellentesque in ultrices ligula, vitae elementum massa. Nullam vulputate diam erat, non imperdiet nisl sagittis ut. Pellentesque faucibus, libero et egestas rutrum, sem orci cursus neque, sed luctus ligula tellus sit amet neque. Praesent porttitor imperdiet molestie. Sed euismod dui sit amet turpis euismod aliquam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas lacus erat, dapibus vel urna sed, elementum scelerisque ex. Ut suscipit lacus commodo augue cursus maximus. Donec metus ligula, ultricies nec commodo sagittis, maximus vitae turpis. Etiam velit arcu, tincidunt sit amet metus quis, vulputate mollis enim. Integer id malesuada diam. Phasellus risus lacus, vestibulum nec rutrum vitae, euismod quis erat.</p>
+	              <p class="research-content redacted">Sed tincidunt risus a molestie imperdiet. Etiam molestie magna vel lorem tempor, sit amet fermentum lorem viverra. Curabitur vestibulum et mi at pharetra. Nam imperdiet sem in arcu auctor posuere. Quisque nec quam ac nulla pharetra suscipit eu vel magna. Vestibulum dapibus, sapien vitae pulvinar scelerisque, ligula tortor finibus justo, sed egestas purus nunc ut lacus. Etiam viverra ligula iaculis arcu rutrum pulvinar vel sed tellus. Fusce commodo quis sapien ac egestas. Vestibulum efficitur, enim et fermentum lobortis, ex lectus sodales mi, at blandit risus est non diam. Nulla facilisi. Nam nec enim metus. Integer venenatis pulvinar velit, eu facilisis nisi. Morbi lacinia dignissim quam, sed sollicitudin nisl malesuada non. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec convallis laoreet dolor, eget consequat lectus vehicula ut. Vivamus at posuere lacus.</p>
+	              <div class="panel citations redacted">
+	                <p id="citenote-c1">[1] <a href="#">(view)</a> Graphite-Conjugated Rhenium Catalysts for Carbon Dioxide Reduction.  Oh, S.; Gallagher, J. R.; Miller, J. T.; Surendranath, Y. <i>J. Am. Chem. Soc.</i> <b>2016</b>, <i>138</i>, 1820–1823</p>
+	                <p id="citenote-c2">[2] <a href="#">(view)</a> Inhibited proton transfer enhances Au-catalyzed CO2-to-fuels selectivity. Wuttig, A.; Yaguchi, M; Motobayashi, K.; Osawa, M.; Surendranath, Y. <i>Proc. Natl. Acad. Sci. U. S. A.</i>, <b>2016</b>, E4585–E4593</p>
+	              </div>
+	            </div> -->
+
+	          <!-- ********** RESEARCH TAB 4 ********** -->
+	          </div>
+	        </div>
+	      </div>
+	    </section>
+
+  <!-- ********** PEOPLE ********** -->
+	    <section class="members">
+		    <div class="row">
+		    	<div class="small-12 columns">
+				    <div class="panel panel-primary" style="background:#ffffff">
+				      <h1 class="section-header"><span class="anchor" id="members"></span>people</h1>
+				      <ul class="tabs" data-tab>
+				        <li class="members-tab tab-title" ><a href="#athma">Athma Pai</a></li>
+				        <li class="members-tab tab-title active"><a href="#current">Current</a></li>
+				        <!--<li class="members-tab tab-title"><a href="#alumni">Alumni</a></li>-->
+				        <li class="members-tab tab-title"><a href="#join">Join us!</a></li>
+				        <!--<li class="members-tab tab-title"><a href="#fun">Lab Fun</a></li>-->
+				      </ul>
+				      <div class="tabs-content">
+
+				      <!-- ********** ATHMA's SECTION ********** -->
+				      	<div class="content" id="athma">
+				      		<div class="row">
+				      			<img src="images/people/AthmaPai.jpg" class="th" style="float:left; width:35%; margin-right:1rem;">
+
+				      			<p class="research-content"> Athma was born in Stamford, CT, once called the "Research City" due to it's bustling innovation-driven economy. She was fascinated by science at an early age, inspired by her father's demonstrations of bright chemiluminescent displays and working her way through all the science fiction books in the local library. In high school, she discovered genetics by reading Matt Ridley's <i>Genome: An Autobiography of a Species in 23 Chapters</i>.</p>
+
+				      			<p class="research-content">At the University of Pennsylvania, Athma managed to simultaneously pursue her interests in genetics, chemistry, and evolution by majoring in Biochemistry and Anthropology and doing research Theodore Schurr's anthropological genetics lab studying the genetic signatures of human migration. Continuing in this vein, she pursued graduate work in human and comparative genomics in the Department of Human Genetics at the University of Chicago. Working with Yoav Gilad and collaborating closely with Jonathan Pritchard's group, Athma applied both experimental and computational approaches to understanding how gene regulatory variation in humans and closely related primates established their gene expression signatures. One primary focus of her work was to map molecular quantitative trait loci (QTLs) in humans for many transcriptional regulatory mechanisms.</p>
+
+				      			<p class="research-content">To gain more experience in understanding the molecular details of gene regulatory mechanisms, Athma did her postdoctoral research as a Jane Coffin Childs Fellow at MIT working with Christopher Burge. She focused on understanding the changes in mRNA splicing and RNA processing mechanisms after immune response and developing methods to measure the dyanmics of such processes. Her transition to an RNA systems geneticist complete, Athma assumed her current position as an Assistant Professor in the RNA Therapeutics Institute at UMMS in January 2018. Her research focuses on developing and applying methods to study the kinetics of RNA processing and understanding how various steps in RNA maturation are coordinated through the lifecycle of an RNA molecule. In her spare time, Athma enjoys traveling, racquet sports, experimenting with molecular gastronomy, and finding the best ice cream in New England. 
+				      		</div>
+			      		</div>
+
+			      		<!-- ********** CURRENT PEOPLE SECTION ********** -->
+				        <div class="content active" id="current">
+				          <div class="row">
+				            <!--<div class="large-12 columns">
+				              <h3 class="text-center">Graduate Students</h3>
+				            </div>-->
+				            <div class="large-12 columns">
+				              <h3 class="text-center">   </h3>
+				            </div>
+				            <hr />
+				            <div class="large-2 medium-4 small-4 columns large-offset-3" data-equalizer-watch>
+				                <a data-reveal-id="nidajaveed"><img class="thumbnail profile frame-round" style="background-image: url('images/people/NidaJaveed.jpeg');" />
+				                <h5 class="text-center profile-name"><b>Nida Javeed</b><br>Tech</h5></a>
+				            </div>
+				            <div class="row" data-equalizer>
+				              <div class="large-2 medium-4 small-4 columns" data-equalizer-watch>
+				                <a data-reveal-id="athmapai"><img class="thumbnail profile frame-round" style="background-image: url('images/people/AthmaPai.jpg');" />
+				                <h5 class="text-center profile-name"><b>Athma Pai</b><br>PI</h5></a>
+				              </div>
+				              <div class="large-2 medium-4 small-4 end columns" data-equalizer-watch>
+				                <a data-reveal-id="you"><img class="thumbnail profile frame-round" style="background-image: url('images/people/people-09.png');" />
+				                <h5 class="text-center profile-name">You?</h5></a>
+				              </div>
+				            </div>
+				            <hr />
+				         	<!--<p class="text-center"> <b>Collaborators:</b> <a href="http://luis-barreirolab.org/">Luis Barreiro</a> (UMontreal), <a href="http://beehive.cs.princeton.edu/">Barbara Engelhardt</a> (Princeton), <a href="http://www.lucalab.wayne.edu/HOME.html">Francesca Luca</a> (Wayne State), <a href="http://piquelab.grid.wayne.edu/">Roger Pique-Regi</a> (Wayne State)</p>-->
+				          </div>
+				          <!--<div class="row">
+				            <div class="large-12 columns">
+				              <h3 class="text-center">Postdoctoral Scholars</h3>
+				            </div>
+				            <div class-"row" data-equalizer>
+				              <div class="large-2 medium-3 small-4 columns" data-equalizer-watch>
+				                <a data-reveal-id="placeholder"><img class="thumbnail profile frame-round" style="background-image: url('img/group/jdoe.png');" />
+				                <h5 class="text-center profile-name">Corey Kaminsky</h5></a>
+				              </div>
+				            </div>
+				            <hr />
+				          </div>-->
+				        </div>
+
+				        <!-- ********** ALUMNI SECTION ********** -->
+				        <div class="content" id="alumni">
+				          <!--<div class="row">
+				            <div class="large-12 columns">
+				              <h3 class="text-center">Former Graduate Students</h3>
+				            </div>
+				            <div class="row" data-equalizer>				          
+				              <div class="large-2 medium-3 small-4 columns end" data-equalizer-watch>
+				                <a data-reveal-id="placeholder"><img class="thumbnail profile frame-round" style="background-image: url('img/group/jdoe.png');" />
+				                <h5 class="text-center profile-name">Jeffrey Rosenberg</h5></a>
+				              </div>
+				            </div>
+				            <hr />
+				          </div> -->
+				          <!--<div class="row">
+				            <div class="large-12 columns">
+				              <h3 class="text-center">Former Postdoctoral Scholars</h3>
+				            </div>
+				            <div class-"row" data-equalizer>
+				              <div class="large-2 medium-3 small-4 columns end" data-equalizer-watch>
+				                <a data-reveal-id="placeholder"><img class="thumbnail profile frame-round" style="background-image: url('img/group/jdoe.png');" />
+				                <h5 class="text-center profile-name">Jeffrey Rosenberg</h5></a>
+				              </div>
+				            </div>
+				            <hr />
+				          </div>-->
+				         </div>
+
+
+				        <!-- ********** JOIN US SECTION ********** -->
+				      	<div class="content" id="join">
+				      		<div class="row">
+				      			<!--<img src="images/people-09.png" class="th" style="float:left; width:35%; margin-right:1rem;">-->
+				      			<p class="research-content"> <b>Graduate Students:</b> We are actively recruiting graduate students from the <a href="https://www.umassmed.edu/gsbs/">GSBS doctoral program</a> at UMass Medical School in Worcester. Prospective students should <a href="https://www.umassmed.edu/gsbs/admissions/overview/">apply</a> directly to this program and current students are welcome to <a href="mailto: athma.pai@umassmed.edu?Subject=rotation%20in%20Pai%20lab">e-mail</a> Athma to discuss rotation projects! Graduate students will have the chance to learn techniques spanning experimental genomics to computational biology and mathematical modeling with the goal of understanding fundamendal molecular mechanisms and their mis-regulation in human diseases.</p>
+
+				      			<p class="research-content"> <b>Postdoctoral Scholars:</b> We are currently looking for 1-2 enthusiastic and creative postdoctoral scholars. The ideal candidate will have experience in both experimental and computational genomics, but we welcome all applicants with an interest in expanding their skill-sets in RNA biology, genomics and computational biology. For more details, please see our <a data-reveal-id="postdoc">advertisement</a> and <a href="mailto: athma.pai@umassmed.edu?Subject=postdoctoral%20position%20in%20Pai%20lab">e-mail</a> Athma with the necessary material.</p>
+
+				      			<p class="research-content"> <b>Other positions:</b> We encourage inquiries from undergraduate researchers from the New England area or visiting scientists from any discipline. Please email Athma to see whether there are any such opportunities available in the lab at the moment.</p>
+				      		</div>
+			      		</div>
+
+				      <!-- ********** LAB FUN SECTION ********** -->
+				      	<div class="content" id="fun">
+				      		<div class="row">
+				      			<img src="images/AthmaPai.jpg" class="th" style="float:left; width:35%; margin-right:1rem;">
+				      			<p class="research-content redacted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat urna vel nunc accumsan, at porttitor neque posuere. Proin in fringilla dui. Curabitur sit amet semper erat. Mauris elementum fringilla magna egestas pulvinar. Cras vehicula aliquet aliquam. Mauris ipsum erat, molestie id consectetur ut, pulvinar at sapien. Nulla erat justo, accumsan nec velit nec, eleifend eleifend est. Aliquam commodo tristique neque nec hendrerit. Ut nec metus enim. Ut quis fringilla lacus. Etiam hendrerit blandit lectus vitae maximus. Sed vulputate justo a leo tincidunt.</p>
+				      		</div>
+			      		</div>
+				        </div>
+				      </div>
+				    </div>
+			    </div>
+		    </div>
+	    </section>
+
+  <!-- ********** PUBLICATIONS ********** -->
+	    <section class="publications">
+	    <br>
+		    <div class="row">
+		      <div class="small-12 columns">
+		        <div class="panel panel-primary" style="background:#ffffff">
+		          <h1 class="section-header"><span class="anchor" id="publications"></span>publications</h1>
+		          <div class="row about-boxes">
+		            <div class="small-12 columns">
+		            <table cellpadding="0" cellspacing="0" border="0" class="pub-table" width="100%" id="ptable">
+		              <col class="number">
+		              <col class="toc">
+		              <col class="authors">
+		              <col class="title">
+		              <col class="journal">
+		              <col class="year">
+		              <col class="citation">
+		              <col class="link-button">
+		              <col class="pdf-button">
+		              <thead>
+		                <tr>
+		                  <th id="sort"> # </th>
+		                  <th> Abstract </th>
+		                  <th> Authors </th>
+		                  <th> Title </th>
+		                  <th> Journal </th>
+		                  <th> Year </th>
+		                  <th class="column-collapse"></th>
+		                  <th> </th>
+		                  <th> </th>
+		                </tr>
+		              </thead>
+		              <tbody>
+
+		                <!-- ***** 2018 ***** -->		                		                
+		                <tr id="abstract" class="abstract-tooltip" data-number="26" data-title="BIISQ: Bayesian nonparametric discovery of Isoforms and Individual Specific Quantification from RNA-seq data." data-authors="Aguiar D, Cheng L, Dumitrascu B, Mordelet F, Pai AA, Engelhardt BE" data-journal="Nature Communications (in press)" data-year="2018", data-volume="x" data-pages="x" data-url="LINK" data-toc="TOC", data-pdf="PDF" data-abstract="<span style='color:#eee'> ABSTRACT </span>">
+		                  <td class="fill-number"></td>
+		                  <td class="fill-toc"></td>
+		                  <td class="fill-authors"></td>
+		                  <td class="fill-title"></td>
+		                  <td class="fill-journal"></td>
+		                  <td class="fill-year"></td>
+		                  <td class="fill-link-button" id="url"></td>
+		                  <td class="fill-pdf-button" id="pdf"></td>
+		                </tr>
+
+		                <!-- ***** 2017 ***** -->		                		                
+		                <tr id="abstract" class="abstract-tooltip" data-number="25" data-title="The kinetics of pre-mRNA splicing in the Drosophila genome and the influence of gene architecture." data-authors="Pai AA, Henriques T, McCue K, Burkholder A, Adelman K, Burge C" data-journal="eLife" data-year="2017", data-volume="6" data-pages="e32537" data-url="https://elifesciences.org/articles/32537" data-toc="pdfs/tocs/pai2017_toc.jpeg", data-pdf="pdfs/pai_2017.pdf" data-abstract="<span style='color:#eee'> Production of most eukaryotic mRNAs requires splicing of introns from pre-mRNA. The splicing reaction requires definition of splice sites, which are initially recognized in either intron-spanning (‘intron definition’) or exon-spanning (‘exon definition’) pairs. To understand how exon and intron length and splice site recognition mode impact splicing, we measured splicing rates genome-wide in Drosophila, using metabolic labeling/RNA sequencing and new mathematical models to estimate rates. We found that the modal intron length range of 60–70 nt represents a local maximum of splicing rates, but that much longer exon-defined introns are spliced even faster and more accurately. We observed unexpectedly low variation in splicing rates across introns in the same gene, suggesting the presence of gene-level influences, and we identified multiple gene level variables associated with splicing rate. Together our data suggest that developmental and stress response genes may have preferentially evolved exon definition in order to enhance the rate or accuracy of splicing. </span>">
+		                  <td class="fill-number"></td>
+		                  <td class="fill-toc"></td>
+		                  <td class="fill-authors"></td>
+		                  <td class="fill-title"></td>
+		                  <td class="fill-journal"></td>
+		                  <td class="fill-year"></td>
+		                  <td class="fill-link-button" id="url"></td>
+		                  <td class="fill-pdf-button" id="pdf"></td>
+		                </tr>
+		                <tr id="abstract" class="abstract-tooltip" data-number="24" data-title="Environmental perturbations lead to extensive directional shifts in RNA processing." data-authors="Richards AL, Watza D, Findley A, Alazizi A, Wen X, Pai AA, Pique-Regi R, Luca F" data-journal="PLOS Genetics" data-year="2017", data-volume="13(10)" data-pages="e1006995" data-url="dx.doi.org/10.1371/journal.pgen.1006995" data-toc="", data-pdf="pdfs/richards_2017.pdf" data-abstract="<span style='color:#eee'> Environmental perturbations have large effects on both organismal and cellular traits, including gene expression, but the extent to which the environment affects RNA processing remains largely uncharacterized. Recent studies have identified a large number of genetic variants associated with variation in RNA processing that also have an important role in complex traits; yet we do not know in which contexts the different underlying isoforms are used. Here, we comprehensively characterized changes in RNA processing events across 89 environments in five human cell types and identified 15,300 event shifts (FDR = 15%) comprised of eight event types in over 4,000 genes. Many of these changes occur consistently in the same direction across conditions, indicative of global regulation by trans factors. Accordingly, we demonstrate that environmental modulation of splicing factor binding predicts shifts in intron retention, and that binding of transcription factors predicts shifts in alternative first exon (AFE) usage in response to specific treatments. We validated the mechanism hypothesized for AFE in two independent datasets. Using ATAC-seq, we found altered binding of 64 factors in response to selenium at sites of AFE shift, including ELF2 and other factors in the ETS family. We also performed AFE QTL mapping in 373 individuals and found an enrichment for SNPs predicted to disrupt binding of the ELF2 factor. Together, these results demonstrate that RNA processing is dramatically changed in response to environmental perturbations through specific mechanisms regulated by trans factors. </span>">
+		                  <td class="fill-number"></td>
+		                  <td class="fill-toc"></td>
+		                  <td class="fill-authors"></td>
+		                  <td class="fill-title"></td>
+		                  <td class="fill-journal"></td>
+		                  <td class="fill-year"></td>
+		                  <td class="fill-link-button" id="url"></td>
+		                  <td class="fill-pdf-button" id="pdf"></td>
+		                </tr>
+
+		                <!-- ***** 2016 ***** -->		                		                
+		                <tr id="abstract" class="abstract-tooltip" data-number="23" data-title="Widespread shortening of 3’ untranslated regions and increased exon inclusion are evolutionarily conserved features of innate immune response to infection." data-authors="Pai AA, Baharian G, Sabourin AP, Brinkworth JF, Nedelec Y, Foley JW, Grenier JC, Siddle KJ, Dumaine A, Yotova Y, Johnson ZP, Lanford RE, Burge CB, Barreiro LB" data-journal="PLOS Genetics" data-year="2016", data-volume="12(9)" data-pages="e1006338" data-url="http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1006338" data-toc="", data-pdf="pdfs/pai_2016.pdf" data-abstract="<span style='color:#eee'> The contribution of pre-mRNA processing mechanisms to the regulation of immune responses remains poorly studied despite emerging examples of their role as regulators of immune defenses. We sought to investigate the role of mRNA processing in the cellular responses of human macrophages to live bacterial infections. Here, we used mRNA sequencing to quantify gene expression and isoform abundances in primary macrophages from 60 individuals, before and after infection with Listeria monocytogenes and Salmonella typhimurium. In response to both bacteria we identified thousands of genes that significantly change isoform usage in response to infection, characterized by an overall increase in isoform diversity after infection. In response to both bacteria, we found global shifts towards (i) the inclusion of cassette exons and (ii) shorter 3’ UTRs, with near-universal shifts towards usage of more upstream polyadenylation sites. Using complementary data collected in non-human primates, we show that these features are evolutionarily conserved among primates. Following infection, we identify candidate RNA processing factors whose expression is associated with individual-specific variation in isoform abundance. Finally, by profiling microRNA levels, we show that 3’ UTRs with reduced abundance after infection are significantly enriched for target sites for particular miRNAs. These results suggest that the pervasive usage of shorter 3’ UTRs is a mechanism for particular genes to evade repression by immune-activated miRNAs. Collectively, our results suggest that dynamic changes in RNA processing may play key roles in the regulation of innate immune responses. </span>">
+		                  <td class="fill-number"></td>
+		                  <td class="fill-toc"></td>
+		                  <td class="fill-authors"></td>
+		                  <td class="fill-title"></td>
+		                  <td class="fill-journal"></td>
+		                  <td class="fill-year"></td>
+		                  <td class="fill-link-button" id="url"></td>
+		                  <td class="fill-pdf-button" id="pdf"></td>
+		                </tr>
+		                <tr id="abstract" class="abstract-tooltip" data-number="22" data-title="Principles for RNA metabolism and alternative transcription initiation within closely spaced promoters." data-authors="Chen Y, Pai AA, Herudek J, Lubas M, Meola N, Järvelin AI, Andersson R, Pelechano V, Steinmetz LM, Jensen TH, Sandelin A" data-journal="Nature Genetics" data-year="2016", data-volume="48" data-pages="984-994" data-url="https://www.nature.com/articles/ng.3616" data-toc="", data-pdf="pdfs/chen_2016.pdf" data-abstract="<span style='color:#eee'> Mammalian transcriptomes are complex and formed by extensive promoter activity. In addition, gene promoters are largely divergent and initiate transcription of reverse-oriented promoter upstream transcripts (PROMPTs). Although PROMPTs are commonly terminated early, influenced by polyadenylation sites, promoters often cluster so that the divergent activity of one might impact another. Here we found that the distance between promoters strongly correlates with the expression, stability and length of their associated PROMPTs. Adjacent promoters driving divergent mRNA transcription support PROMPT formation, but owing to polyadenylation site constraints, these transcripts tend to spread into the neighboring mRNA on the same strand. This mechanism to derive new alternative mRNA transcription start sites (TSSs) is also evident at closely spaced promoters supporting convergent mRNA transcription. We suggest that basic building blocks of divergently transcribed core promoter pairs, in combination with the wealth of TSSs in mammalian genomes, provide a framework with which evolution shapes transcriptomes. </span>">
+		                  <td class="fill-number"></td>
+		                  <td class="fill-toc"></td>
+		                  <td class="fill-authors"></td>
+		                  <td class="fill-title"></td>
+		                  <td class="fill-journal"></td>
+		                  <td class="fill-year"></td>
+		                  <td class="fill-link-button" id="url"></td>
+		                  <td class="fill-pdf-button" id="pdf"></td>
+		                </tr>
+
+		                <!-- ***** 2015 ***** -->		                		                
+		                <tr id="abstract" class="abstract-tooltip" data-number="21" data-title="Bacterial Infection Remodels the DNA Methylation Landscape of Human Dendritic Cells." data-authors="Pacis A, Tailleux L, Amorim A, Lambourne J, MacIssac JL, Yotova V, Dumaine A, Danckaert A, Luca F, Grenier JC, Hansen KD, Gicquel B, Yu M, Pai AA, Tung J, He C, Pastinen T, Kobor MS, Pique-Regi R, Gilad Y, Barreiro LB" data-journal="Genome Research" data-year="2015", data-volume="25" data-pages="1-11" data-url="http://genome.cshlp.org/content/25/12/1801.short" data-toc="", data-pdf="pdfs/pacis_2015.pdf" data-abstract="<span style='color:#eee'> DNA methylation is an epigenetic mark thought to be robust to environmental perturbations on a short time scale. Here, we challenge that view by demonstrating that the infection of human dendritic cells (DCs) with a live pathogenic bacteria is associated with rapid and active demethylation at thousands of loci, independent of cell division. We performed an integrated analysis of data on genome-wide DNA methylation, histone mark patterns, chromatin accessibility, and gene expression, before and after infection. We found that infection-induced demethylation rarely occurs at promoter regions and instead localizes to distal enhancer elements, including those that regulate the activation of key immune transcription factors. Active demethylation is associated with extensive epigenetic remodeling, including the gain of histone activation marks and increased chromatin accessibility, and is strongly predictive of changes in the expression levels of nearby genes. Collectively, our observations show that active, rapid changes in DNA methylation in enhancers play a previously unappreciated role in regulating the transcriptional response to infection, even in nonproliferating cells. </span>">
+		                  <td class="fill-number"></td>
+		                  <td class="fill-toc"></td>
+		                  <td class="fill-authors"></td>
+		                  <td class="fill-title"></td>
+		                  <td class="fill-journal"></td>
+		                  <td class="fill-year"></td>
+		                  <td class="fill-link-button" id="url"></td>
+		                  <td class="fill-pdf-button" id="pdf"></td>
+		                </tr>
+		                <tr id="abstract" class="abstract-tooltip" data-number="20" data-title="The genetic and mechanistic basis for variation in gene regulation." data-authors="Pai AA, Pritchard JK, Gilad, Y" data-journal="PLOS Genetics" data-year="2015", data-volume="11(1)" data-pages="e1004857" data-url="http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1004857" data-toc="", data-pdf="pdf/pai_2015.pdf" data-abstract="<span style='color:#eee'> It is now well established that noncoding regulatory variants play a central role in the genetics of common diseases and in evolution. However, until recently, we have known little about the mechanisms by which most regulatory variants act. For instance, what types of functional elements in DNA, RNA, or proteins are most often affected by regulatory variants? Which stages of gene regulation are typically altered? How can we predict which variants are most likely to impact regulation in a given cell type? Recent studies, in many cases using quantitative trait loci (QTL)-mapping approaches in cell lines or tissue samples, have provided us with considerable insight into the properties of genetic loci that have regulatory roles. Such studies have uncovered novel biochemical regulatory interactions and led to the identification of previously unrecognized regulatory mechanisms. We have learned that genetic variation is often directly associated with variation in regulatory activities (namely, we can map regulatory QTLs, not just expression QTLs [eQTLs]), and we have taken the first steps towards understanding the causal order of regulatory events (for example, the role of pioneer transcription factors). Yet, in most cases, we still do not know how to interpret overlapping combinations of regulatory interactions, and we are still far from being able to predict how variation in regulatory mechanisms is propagated through a chain of interactions to eventually result in changes in gene expression profiles. </span>">
+		                  <td class="fill-number"></td>
+		                  <td class="fill-toc"></td>
+		                  <td class="fill-authors"></td>
+		                  <td class="fill-title"></td>
+		                  <td class="fill-journal"></td>
+		                  <td class="fill-year"></td>
+		                  <td class="fill-link-button" id="url"></td>
+		                  <td class="fill-pdf-button" id="pdf"></td>
+		                </tr>
+
+		                <!-- ***** 2014 ***** -->		                		                
+		                <tr id="abstract" class="abstract-tooltip" data-number="19" data-title="Comparative studies of gene regulatory mechanisms" data-authors="Pai AA and Gilad, Y" data-journal="Current Opinions in Genetics and Development" data-year="2014", data-volume="29" data-pages="68-74" data-url="http://www.sciencedirect.com/science/article/pii/S0959437X14000914" data-toc="", data-pdf="pdfs/pai_2014.pdf" data-abstract="<span style='color:#eee'> It has become increasingly clear that changes in gene regulation have played an important role in adaptive evolution both between and within species. Over the past five years, comparative studies have moved beyond simple characterizations of differences in gene expression levels within and between species to studying variation in regulatory mechanisms. We still know relatively little about the precise chain of events that lead to most regulatory adaptations, but we have taken significant steps towards understanding the relative importance of changes in different mechanisms of gene regulatory evolution. In this review, we first discuss insights from comparative studies in model organisms, where the available experimental toolkit is extensive. We then focus on a few recent comparative studies in primates, where the limited feasibility of experimental manipulation dictates the approaches that can be used to study gene regulatory evolution. </span>">
+		                  <td class="fill-number"></td>
+		                  <td class="fill-toc"></td>
+		                  <td class="fill-authors"></td>
+		                  <td class="fill-title"></td>
+		                  <td class="fill-journal"></td>
+		                  <td class="fill-year"></td>
+		                  <td class="fill-link-button" id="url"></td>
+		                  <td class="fill-pdf-button" id="pdf"></td>
+		                </tr>
+		                <tr id="abstract" class="abstract-tooltip" data-number="18" data-title="Impact of RNA degradation on measurements of gene expression." data-authors="Gallego Romero I, Pai AA, Tung J, Gilad Y." data-journal="BMC Biology" data-year="2014", data-volume="12(1)" data-pages="42" data-url="https://bmcbiol.biomedcentral.com/articles/10.1186/1741-7007-12-42" data-toc="", data-pdf="pdfs/gallegoromero_2014.pdf" data-abstract="<span style='color:#eee'> Background: The use of low quality RNA samples in whole-genome gene expression profiling remains controversial. It is unclear if transcript degradation in low quality RNA samples occurs uniformly, in which case the effects of degradation can be corrected via data normalization, or whether different transcripts are degraded at different rates, potentially biasing measurements of expression levels. This concern has rendered the use of low quality RNA samples in whole-genome expression profiling problematic. Yet, low quality samples (for example, samples collected in the course of fieldwork) are at times the sole means of addressing specific questions. Results: We sought to quantify the impact of variation in RNA quality on estimates of gene expression levels based on RNA-seq data. To do so, we collected expression data from tissue samples that were allowed to decay for varying amounts of time prior to RNA extraction. The RNA samples we collected spanned the entire range of RNA Integrity Number (RIN) values (a metric commonly used to assess RNA quality). We observed widespread effects of RNA quality on measurements of gene expression levels, as well as a slight but significant loss of library complexity in more degraded samples. Conclusions: While standard normalizations failed to account for the effects of degradation, we found that by explicitly controlling for the effects of RIN using a linear model framework we can correct for the majority of these effects. We conclude that in instances in which RIN and the effect of interest are not associated, this approach can help recover biologically meaningful signals in data from degraded RNA samples. </span>">
+		                  <td class="fill-number"></td>
+		                  <td class="fill-toc"></td>
+		                  <td class="fill-authors"></td>
+		                  <td class="fill-title"></td>
+		                  <td class="fill-journal"></td>
+		                  <td class="fill-year"></td>
+		                  <td class="fill-link-button" id="url"></td>
+		                  <td class="fill-pdf-button" id="pdf"></td>
+		                </tr>
+
+		                <!-- ***** 2012 ***** -->		                		                
+		                <tr id="abstract" class="abstract-tooltip" data-number="17" data-title="Controls of nucleosome positioning in the human genome." data-authors="Gaffney DJ, McVicker G, Pai AA, Fondufe-Mittendorf YN, Lewellen N, Michelini K, Widom J, Gilad Y, Pritchard JK" data-journal="PLOS Genetics" data-year="2012", data-volume="9(11)" data-pages="e1003036" data-url="http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1003036" data-toc="", data-pdf="pdfs/gaffney_2012b.pdf" data-abstract="<span style='color:#eee'> Nucleosomes are important for gene regulation because their arrangement on the genome can control which proteins bind to DNA. Currently, few human nucleosomes are thought to be consistently positioned across cells; however, this has been difficult to assess due to the limited resolution of existing data. We performed paired-end sequencing of micrococcal nuclease-digested chromatin (MNase–seq) from seven lymphoblastoid cell lines and mapped over 3.6 billion MNase–seq fragments to the human genome to create the highest-resolution map of nucleosome occupancy to date in a human cell type. In contrast to previous results, we find that most nucleosomes have more consistent positioning than expected by chance and a substantial fraction (8.7%) of nucleosomes have moderate to strong positioning. In aggregate, nucleosome sequences have 10 bp periodic patterns in dinucleotide frequency and DNase I sensitivity; and, across cells, nucleosomes frequently have translational offsets that are multiples of 10 bp. We estimate that almost half of the genome contains regularly spaced arrays of nucleosomes, which are enriched in active chromatin domains. Single nucleotide polymorphisms that reduce DNase I sensitivity can disrupt the phasing of nucleosome arrays, which indicates that they often result from positioning against a barrier formed by other proteins. However, nucleosome arrays can also be created by DNA sequence alone. The most striking example is an array of over 400 nucleosomes on chromosome 12 that is created by tandem repetition of sequences with strong positioning properties. In summary, a large fraction of nucleosomes are consistently positioned—in some regions because they adopt favored sequence positions, and in other regions because they are forced into specific arrangements by chromatin remodeling or DNA binding proteins. </span>">
+		                  <td class="fill-number"></td>
+		                  <td class="fill-toc"></td>
+		                  <td class="fill-authors"></td>
+		                  <td class="fill-title"></td>
+		                  <td class="fill-journal"></td>
+		                  <td class="fill-year"></td>
+		                  <td class="fill-link-button" id="url"></td>
+		                  <td class="fill-pdf-button" id="pdf"></td>
+		                </tr>
+		                <tr id="abstract" class="abstract-tooltip" data-number="16" data-title="The contribution of RNA decay quantitative trait loci to inter-individual variation in steady-state gene expression levels." data-authors="Pai AA, Cain CE, Man O, Veyrieras J-B, De Leon S, Lewellen N, Degner JF, Gaffney DJ, Pickrell JK, Stephens M, Pritchard JK, Gilad Y" data-journal="PLOS Genetics" data-year="2012", data-volume="8(10)" data-pages="e1003000" data-url="http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1003000" data-toc="", data-pdf="pdfs/pai_2012.pdf" data-abstract="<span style='color:#eee'> Recent gene expression QTL (eQTL) mapping studies have provided considerable insight into the genetic basis for inter-individual regulatory variation. However, a limitation of all eQTL studies to date, which have used measurements of steady-state gene expression levels, is the inability to directly distinguish between variation in transcription and decay rates. To address this gap, we performed a genome-wide study of variation in gene-specific mRNA decay rates across individuals. Using a time-course study design, we estimated mRNA decay rates for over 16,000 genes in 70 Yoruban HapMap lymphoblastoid cell lines (LCLs), for which extensive genotyping data are available. Considering mRNA decay rates across genes, we found that: (i) as expected, highly expressed genes are generally associated with lower mRNA decay rates, (ii) genes with rapid mRNA decay rates are enriched with putative binding sites for miRNA and RNA binding proteins, and (iii) genes with similar functional roles tend to exhibit correlated rates of mRNA decay. Focusing on variation in mRNA decay across individuals, we estimate that steady-state expression levels are significantly correlated with variation in decay rates in 10% of genes. Somewhat counter-intuitively, for about half of these genes, higher expression is associated with faster decay rates, possibly due to a coupling of mRNA decay with transcriptional processes in genes involved in rapid cellular responses. Finally, we used these data to map genetic variation that is specifically associated with variation in mRNA decay rates across individuals. We found 195 such loci, which we named RNA decay quantitative trait loci (“rdQTLs”). All the observed rdQTLs are located near the regulated genes and therefore are assumed to act in cis. By analyzing our data within the context of known steady-state eQTLs, we estimate that a substantial fraction of eQTLs are associated with inter-individual variation in mRNA decay rates. </span>">
+		                  <td class="fill-number"></td>
+		                  <td class="fill-toc"></td>
+		                  <td class="fill-authors"></td>
+		                  <td class="fill-title"></td>
+		                  <td class="fill-journal"></td>
+		                  <td class="fill-year"></td>
+		                  <td class="fill-link-button" id="url"></td>
+		                  <td class="fill-pdf-button" id="pdf"></td>
+		                </tr>
+		                <tr id="abstract" class="abstract-tooltip" data-number="15" data-title="Regulatory element copy number differences shape primate expression profiles." data-authors="Iskow RC, Gokcumen O, Abyzov A, Malukiewicz J, Zhu Q, Sukumar AT, Pai AA, Mills RE, Habegger L, Cusanovich DA, Rubel MA, Perry GH, Gerstein M, Stone AC, Gilad Y, Lee C" data-journal="PNAS" data-year="2012", data-volume="109(31)" data-pages="12656-61" data-url="http://www.pnas.org/content/109/31/12656.short" data-toc="", data-pdf="pdfs/iskow_2012.pdf" data-abstract="<span style='color:#eee'> Gene expression differences are shaped by selective pressures and contribute to phenotypic differences between species. We identified 964 copy number differences (CNDs) of conserved sequences across three primate species and examined their potential effects on gene expression profiles. Samples with copy number different genes had significantly different expression than samples with neutral copy number. Genes encoding regulatory molecules differed in copy number and were associated with significant expression differences. Additionally, we identified 127 CNDs that were processed pseudogenes and some of which were expressed. Furthermore, there were copy number-different regulatory regions such as ultraconserved elements and long intergenic noncoding RNAs with the potential to affect expression. We postulate that CNDs of these conserved sequences fine-tune developmental pathways by altering the levels of RNA. </span>">
+		                  <td class="fill-number"></td>
+		                  <td class="fill-toc"></td>
+		                  <td class="fill-authors"></td>
+		                  <td class="fill-title"></td>
+		                  <td class="fill-journal"></td>
+		                  <td class="fill-year"></td>
+		                  <td class="fill-link-button" id="url"></td>
+		                  <td class="fill-pdf-button" id="pdf"></td>
+		                </tr>
+		                <tr id="abstract" class="abstract-tooltip" data-number="14" data-title="The Combination of a Genome-Wide Association Study of Lymphocyte Count and Analysis of Gene Expression Data Reveals Novel Asthma Candidate Genes." data-authors="Cusanovich DA, Billstrand C, Zhou X, Chavarria C, De Leon S, Michelini K, Pai AA, Ober C, Gilad Y" data-journal="Human Molecular Genetics" data-year="2012", data-volume="21(9)" data-pages="2111-2113" data-url="https://academic.oup.com/hmg/article/21/9/2111/579750" data-toc="", data-pdf="pdfs/cusanovich_2012.pdf" data-abstract="<span style='color:#eee'> Recent genome-wide association studies (GWAS) have identified a number of novel genetic associations with complex human diseases. In spite of these successes, results from GWAS generally explain only a small proportion of disease heritability, an observation termed the ‘missing heritability problem’. Several sources for the missing heritability have been proposed, including the contribution of many common variants with small individual effect sizes, which cannot be reliably found using the standard GWAS approach. The goal of our study was to explore a complimentary approach, which combines GWAS results with functional data in order to identify novel genetic associations with small effect sizes. To do so, we conducted a GWAS for lymphocyte count, a physiologic quantitative trait associated with asthma, in 462 Hutterites. In parallel, we performed a genome-wide gene expression study in lymphoblastoid cell lines from 96 Hutterites. We found significant support for genetic associations using the GWAS data when we considered variants near the 193 genes whose expression levels across individuals were most correlated with lymphocyte counts. Interestingly, these variants are also enriched with signatures of an association with asthma susceptibility, an observation we were able to replicate. The associated loci include genes previously implicated in asthma susceptibility as well as novel candidate genes enriched for functions related to T cell receptor signaling and adenosine triphosphate synthesis. Our results, therefore, establish a new set of asthma susceptibility candidate genes. More generally, our observations support the notion that many loci of small effects influence variation in lymphocyte count and asthma susceptibility. </span>">
+		                  <td class="fill-number"></td>
+		                  <td class="fill-toc"></td>
+		                  <td class="fill-authors"></td>
+		                  <td class="fill-title"></td>
+		                  <td class="fill-journal"></td>
+		                  <td class="fill-year"></td>
+		                  <td class="fill-link-button" id="url"></td>
+		                  <td class="fill-pdf-button" id="pdf"></td>
+		                </tr>
+		                <tr id="abstract" class="abstract-tooltip" data-number="13" data-title="DNaseI sensitivity QTLs are a major determinant of human expression variation." data-authors="Degner JF, Pai AA, Pique-Regi R, Veyrieras J-B, Gaffney DJ, Pickrell JK, De Leon S, Michelini K, Lewellen N, Crawford GE, Stephens M, Gilad Y, Pritchard JK" data-journal="Nature" data-year="2012", data-volume="482(7385)" data-pages="390-394" data-url="https://www.nature.com/articles/nature10808" data-toc="", data-pdf="pdfs/degner_2012.pdf" data-abstract="<span style='color:#eee'> The mapping of expression quantitative trait loci (eQTLs) has emerged as an important tool for linking genetic variation to changes in gene regulation. However, it remains difficult to identify the causal variants underlying eQTLs, and little is known about the regulatory mechanisms by which they act. Here we show that genetic variants that modify chromatin accessibility and transcription factor binding are a major mechanism through which genetic variation leads to gene expression differences among humans. We used DNase I sequencing to measure chromatin accessibility in 70 Yoruba lymphoblastoid cell lines, for which genome-wide genotypes and estimates of gene expression levels are also available. We obtained a total of 2.7 billion uniquely mapped DNase I-sequencing (DNase-seq) reads, which allowed us to produce genome-wide maps of chromatin accessibility for each individual. We identified 8,902 locations at which the DNase-seq read depth correlated significantly with genotype at a nearby single nucleotide polymorphism or insertion/deletion (false discovery rate = 10%). We call such variants ‘DNase I sensitivity quantitative trait loci’ (dsQTLs). We found that dsQTLs are strongly enriched within inferred transcription factor binding sites and are frequently associated with allele-specific changes in transcription factor binding. A substantial fraction (16%) of dsQTLs are also associated with variation in the expression levels of nearby genes (that is, these loci are also classified as eQTLs). Conversely, we estimate that as many as 55% of eQTL single nucleotide polymorphisms are also dsQTLs. Our observations indicate that dsQTLs are highly abundant in the human genome and are likely to be important contributors to phenotypic variation. </span>">
+		                  <td class="fill-number"></td>
+		                  <td class="fill-toc"></td>
+		                  <td class="fill-authors"></td>
+		                  <td class="fill-title"></td>
+		                  <td class="fill-journal"></td>
+		                  <td class="fill-year"></td>
+		                  <td class="fill-link-button" id="url"></td>
+		                  <td class="fill-pdf-button" id="pdf"></td>
+		                </tr>
+		                <tr id="abstract" class="abstract-tooltip" data-number="12" data-title="Dissecting the regulatory architecture of gene expression QTLs." data-authors="Gaffney DJ, Veyrieras J-B, Degner JF, Pique-Regi R, Pai AA, Crawford GE, Stephens M, Gilad Y, Pritchard JK" data-journal="Genome Biology" data-year="2012", data-volume="13(1)" data-pages="R7" data-url="https://genomebiology.biomedcentral.com/articles/10.1186/gb-2012-13-1-r7" data-toc="", data-pdf="gaffney_2012a.pdf" data-abstract="<span style='color:#eee'> Background: Expression quantitative trait loci (eQTLs) are likely to play an important role in the genetics of complex traits; however, their functional basis remains poorly understood. Using the HapMap lymphoblastoid cell lines, we combine 1000 Genomes genotypes and an extensive catalogue of human functional elements to investigate the biological mechanisms that eQTLs perturb. Results: We use a Bayesian hierarchical model to estimate the enrichment of eQTLs in a wide variety of regulatory annotations. We find that approximately 40% of eQTLs occur in open chromatin, and that they are particularly enriched in transcription factor binding sites, suggesting that many directly impact protein-DNA interactions. Analysis of core promoter regions shows that eQTLs also frequently disrupt some known core promoter motifs but, surprisingly, are not enriched in other well-known motifs such as the TATA box. We also show that information from regulatory annotations alone, when weighted by the hierarchical model, can provide a meaningful ranking of the SNPs that are most likely to drive gene expression variation. Conclusions: Our study demonstrates how regulatory annotation and the association signal derived from eQTL-mapping can be combined into a single framework. We used this approach to further our understanding of the biology that drives human gene expression variation, and of the putatively causal SNPs that underlie it. </span>">
+		                  <td class="fill-number"></td>
+		                  <td class="fill-toc"></td>
+		                  <td class="fill-authors"></td>
+		                  <td class="fill-title"></td>
+		                  <td class="fill-journal"></td>
+		                  <td class="fill-year"></td>
+		                  <td class="fill-link-button" id="url"></td>
+		                  <td class="fill-pdf-button" id="pdf"></td>
+		                </tr>
+		                <tr id="abstract" class="abstract-tooltip" data-number="11" data-title="Deciphering the genetic architecture of immune responses to Mycobacterium tuberculosis infection." data-authors="Barreiro LB, Tailleux L, Pai AA, Gicquel B, Marioni JC, Gilad Y" data-journal="PNAS" data-year="2012", data-volume="109(4)" data-pages="1207-1209" data-url="http://www.pnas.org/content/109/4/1204.short" data-toc="", data-pdf="pdfs/barreiro_2012.pdf" data-abstract="<span style='color:#eee'> Tuberculosis (TB) is a major public health problem. One-third of the world's population is estimated to be infected with Mycobacterium tuberculosis (MTB), the etiological agent causing TB, and active disease kills nearly 2 million individuals worldwide every year. Several lines of evidence indicate that interindividual variation in susceptibility to TB has a heritable component, yet we still know little about the underlying genetic architecture. To address this, we performed a genome-wide mapping study of loci that are associated with functional variation in immune response to MTB. Specifically, we characterized transcript and protein expression levels and mapped expression quantitative trait loci (eQTL) in primary dendritic cells (DCs) from 65 individuals, before and after infection with MTB. We found 198 response eQTL, namely loci that were associated with variation in gene expression levels in either untreated or MTB-infected DCs, but not both. These response eQTL are associated with natural regulatory variation that likely affects (directly or indirectly) host interaction with MTB. Indeed, when we integrated our data with results from a genome-wide association study (GWAS) for pulmonary TB, we found that the response eQTL were more likely to be genetically associated with the disease. We thus identified a number of candidate loci, including the MAPK phosphatase DUSP14 in particular, that are promising susceptibility genes to pulmonary TB. </span>">
+		                  <td class="fill-number"></td>
+		                  <td class="fill-toc"></td>
+		                  <td class="fill-authors"></td>
+		                  <td class="fill-title"></td>
+		                  <td class="fill-journal"></td>
+		                  <td class="fill-year"></td>
+		                  <td class="fill-link-button" id="url"></td>
+		                  <td class="fill-pdf-button" id="pdf"></td>
+		                </tr>
+
+		                <!-- ***** 2011 ***** -->
+		                <tr id="abstract" class="abstract-tooltip" data-number="10" data-title="A Genome-wide Study of DNA Methylation Patterns and Gene Expression Levels in Multiple Human and Chimpanzee Tissues" data-authors="Pai AA, Bell JT, Marioni JC, Pritchard JK, Gilad Y" data-journal="PLOS Genetics" data-year="2011", data-volume="7(2)" data-pages="e1001316" data-url="http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1001316" data-toc="", data-pdf="pdfs/pai_2010.pdf" data-abstract="<span style='color:#eee'> The modification of DNA by methylation is an important epigenetic mechanism that affects the spatial and temporal regulation of gene expression. Methylation patterns have been described in many contexts within and across a range of species. However, the extent to which changes in methylation might underlie inter-species differences in gene regulation, in particular between humans and other primates, has not yet been studied. To this end, we studied DNA methylation patterns in livers, hearts, and kidneys from multiple humans and chimpanzees, using tissue samples for which genome-wide gene expression data were also available. Using the multi-species gene expression and methylation data for 7,723 genes, we were able to study the role of promoter DNA methylation in the evolution of gene regulation across tissues and species. We found that inter-tissue methylation patterns are often conserved between humans and chimpanzees. However, we also found a large number of gene expression differences between species that might be explained, at least in part, by corresponding differences in methylation levels. In particular, we estimate that, in the tissues we studied, inter-species differences in promoter methylation might underlie as much as 12%–18% of differences in gene expression levels between humans and chimpanzees. </span>">
+		                  <td class="fill-number"></td>
+		                  <td class="fill-toc"></td>
+		                  <td class="fill-authors"></td>
+		                  <td class="fill-title"></td>
+		                  <td class="fill-journal"></td>
+		                  <td class="fill-year"></td>
+		                  <td class="fill-link-button" id="url"></td>
+		                  <td class="fill-pdf-button" id="pdf"></td>
+		                </tr>
+		               	<tr id="abstract" class="abstract-tooltip" data-number="9" data-title="DNA methylation patterns associate with genetic and gene expression variation in HapMap samples." data-authors="Bell JT, Pai AA, Pickrell JK, Gaffney DJ, Pique-Regi R, Degner JF, Gilad Y, Pritchard JK" data-journal="Genome Biology" data-year="2011", data-volume="12(1)" data-pages="R1" data-url="https://genomebiology.biomedcentral.com/articles/10.1186/gb-2011-12-1-r10" data-toc="", data-pdf="pdfs/bell_2010.pdf" data-abstract="<span style='color:#eee'> Background: DNA methylation is an essential epigenetic mechanism involved in gene regulation and disease, but little is known about the mechanisms underlying inter-individual variation in methylation profiles. Here we measured methylation levels at 22,290 CpG dinucleotides in lymphoblastoid cell lines from 77 HapMap Yoruba individuals, for which genome-wide gene expression and genotype data were also available. Results: Association analyses of methylation levels with more than three million common single nucleotide polymorphisms (SNPs) identified 180 CpG-sites in 173 genes that were associated with nearby SNPs (putatively in cis, usually within 5 kb) at a false discovery rate of 10%. The most intriguing trans signal was obtained for SNP rs10876043 in the disco-interacting protein 2 homolog B gene (DIP2B, previously postulated to play a role in DNA methylation), that had a genome-wide significant association with the first principal component of patterns of methylation; however, we found only modest signal of trans-acting associations overall. As expected, we found significant negative correlations between promoter methylation and gene expression levels measured by RNA-sequencing across genes. Finally, there was a significant overlap of SNPs that were associated with both methylation and gene expression levels.Conclusions: Our results demonstrate a strong genetic component to inter-individual variation in DNA methylation profiles. Furthermore, there was an enrichment of SNPs that affect both methylation and gene expression, providing evidence for shared mechanisms in a fraction of genes. </span>">
+		                  <td class="fill-number"></td>
+		                  <td class="fill-toc"></td>
+		                  <td class="fill-authors"></td>
+		                  <td class="fill-title"></td>
+		                  <td class="fill-journal"></td>
+		                  <td class="fill-year"></td>
+		                  <td class="fill-link-button" id="url"></td>
+		                  <td class="fill-pdf-button" id="pdf"></td>
+		                </tr>
+		                <tr id="abstract" class="abstract-tooltip" data-number="8" data-title="Dissecting the Within-Africa Ancestry of Populations of African Descent in the Americas." data-authors="Stefflova K, Dulik MC, Barnholtz-Sloan JS, Pai AA, Walker AH, Rebbeck T." data-journal="PLOS One" data-year="2011", data-volume="6(1)" data-pages="e14495" data-url="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0014495" data-toc="TOC", data-pdf="PDF" data-abstract="<span style='color:#eee'> Background: The ancestry of African-descended Americans is known to be drawn from three distinct populations: African, European, and Native American. While many studies consider this continental admixture, few account for the genetically distinct sources of ancestry within Africa – the continent with the highest genetic variation. Here, we dissect the within-Africa genetic ancestry of various populations of the Americas self-identified as having primarily African ancestry using uniparentally inherited mitochondrial DNA. Methods and Principal Findings: We first confirmed that our results obtained using uniparentally-derived group admixture estimates are correlated with the average autosomal-derived individual admixture estimates (hence are relevant to genomic ancestry) by assessing continental admixture using both types of markers (mtDNA and Y-chromosome vs. ancestry informative markers). We then focused on the within-Africa maternal ancestry, mining our comprehensive database of published mtDNA variation (∼5800 individuals from 143 African populations) that helped us thoroughly dissect the African mtDNA pool. Using this well-defined African mtDNA variation, we quantified the relative contributions of maternal genetic ancestry from multiple W/WC/SW/SE (West to South East) African populations to the different pools of today's African-descended Americans of North and South America and the Caribbean. Conclusions: Our analysis revealed that both continental admixture and within-Africa admixture may be critical to achieving an adequate understanding of the ancestry of African-descended Americans. While continental ancestry reflects gender-specific admixture processes influenced by different socio-historical practices in the Americas, the within-Africa maternal ancestry reflects the diverse colonial histories of the slave trade. We have confirmed that there is a genetic thread connecting Africa and the Americas, where each colonial system supplied their colonies in the Americas with slaves from African colonies they controlled or that were available for them at the time. This historical connection is reflected in different relative contributions from populations of W/WC/SW/SE Africa to geographically distinct Africa-derived populations of the Americas, adding to the complexity of genomic ancestry in groups ostensibly united by the same demographic label. </span>">
+		                  <td class="fill-number"></td>
+		                  <td class="fill-toc"></td>
+		                  <td class="fill-authors"></td>
+		                  <td class="fill-title"></td>
+		                  <td class="fill-journal"></td>
+		                  <td class="fill-year"></td>
+		                  <td class="fill-link-button" id="url"></td>
+		                  <td class="fill-pdf-button" id="pdf"></td>
+		                </tr>
+		               	<tr id="abstract" class="abstract-tooltip" data-number="7" data-title="Accurate inference of transcription factor binding from DNA sequence and chromatin accessibility data." data-authors="Pique-Regi R, Degner JF, Pai AA, Gaffney DJ, Gilad Y, Pritchard JK" data-journal="Genome Research" data-year="2011", data-volume="21(3)" data-pages="447-55" data-url="http://genome.cshlp.org/content/21/3/447.short" data-toc="", data-pdf="pdfs/pique_2010.pdf" data-abstract="<span style='color:#eee'> Accurate functional annotation of regulatory elements is essential for understanding global gene regulation. Here, we report a genome-wide map of 827,000 transcription factor binding sites in human lymphoblastoid cell lines, which is comprised of sites corresponding to 239 position weight matrices of known transcription factor binding motifs, and 49 novel sequence motifs. To generate this map, we developed a probabilistic framework that integrates cell- or tissue-specific experimental data such as histone modifications and DNase I cleavage patterns with genomic information such as gene annotation and evolutionary conservation. Comparison to empirical ChIP-seq data suggests that our method is highly accurate yet has the advantage of targeting many factors in a single assay. We anticipate that this approach will be a valuable tool for genome-wide studies of gene regulation in a wide variety of cell types or tissues under diverse conditions. </span>">
+		                  <td class="fill-number"></td>
+		                  <td class="fill-toc"></td>
+		                  <td class="fill-authors"></td>
+		                  <td class="fill-title"></td>
+		                  <td class="fill-journal"></td>
+		                  <td class="fill-year"></td>
+		                  <td class="fill-link-button" id="url"></td>
+		                  <td class="fill-pdf-button" id="pdf"></td>
+		                </tr>
+
+		                <!-- ***** 2010 ***** -->
+		                <tr id="abstract" class="abstract-tooltip" data-number="6" data-title="Noisy splicing drives mRNA isoform diversity in human cells." data-authors="Pickrell JK, Pai AA, Gilad Y, Pritchard JK" data-journal="PLOS Genetics" data-year="2010", data-volume="6(12)" data-pages="e1001236" data-url="http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1001236" data-toc="", data-pdf="pdfs/pickrell_2010b.pdf" data-abstract="<span style='color:#eee'> While the majority of multiexonic human genes show some evidence of alternative splicing, it is unclear what fraction of observed splice forms is functionally relevant. In this study, we examine the extent of alternative splicing in human cells using deep RNA sequencing and de novo identification of splice junctions. We demonstrate the existence of a large class of low abundance isoforms, encompassing approximately 150,000 previously unannotated splice junctions in our data. Newly-identified splice sites show little evidence of evolutionary conservation, suggesting that the majority are due to erroneous splice site choice. We show that sequence motifs involved in the recognition of exons are enriched in the vicinity of unconserved splice sites. We estimate that the average intron has a splicing error rate of approximately 0.7% and show that introns in highly expressed genes are spliced more accurately, likely due to their shorter length. These results implicate noisy splicing as an important property of genome evolution. </span>">
+		                  <td class="fill-number"></td>
+		                  <td class="fill-toc"></td>
+		                  <td class="fill-authors"></td>
+		                  <td class="fill-title"></td>
+		                  <td class="fill-journal"></td>
+		                  <td class="fill-year"></td>
+		                  <td class="fill-link-button" id="url"></td>
+		                  <td class="fill-pdf-button" id="pdf"></td>
+		                </tr>
+		               	<tr id="abstract" class="abstract-tooltip" data-number="5" data-title="Understanding mechanisms underlying gene expression variation in humans with RNA sequencing." data-authors="Pickrell JK, Marioni JC, Pai AA, Degner JF, Engelhardt BE, Nkadori E, Veyrieras J-B, Stephens M, Gilad Y, and Pritchard JK" data-journal="Nature" data-year="2010", data-volume="463(7289)" data-pages="768-72" data-url="https://www.nature.com/articles/nature08872" data-toc="", data-pdf="pdfs/pickrell_2010a.pdf" data-abstract="<span style='color:#eee'> Understanding the genetic mechanisms underlying natural variation in gene expression is a central goal of both medical and evolutionary genetics, and studies of expression quantitative trait loci (eQTLs) have become an important tool for achieving this goal. Although all eQTL studies so far have assayed messenger RNA levels using expression microarrays, recent advances in RNA sequencing enable the analysis of transcript variation at unprecedented resolution. We sequenced RNA from 69 lymphoblastoid cell lines derived from unrelated Nigerian individuals that have been extensively genotyped by the International HapMap Project. By pooling data from all individuals, we generated a map of the transcriptional landscape of these cells, identifying extensive use of unannotated untranslated regions and more than 100 new putative protein-coding exons. Using the genotypes from the HapMap project, we identified more than a thousand genes at which genetic variation influences overall expression levels or splicing. We demonstrate that eQTLs near genes generally act by a mechanism involving allele-specific expression, and that variation that influences the inclusion of an exon is enriched within and near the consensus splice sites. Our results illustrate the power of high-throughput sequencing for the joint analysis of variation in transcription, splicing and allele-specific expression across individuals. </span>">
+		                  <td class="fill-number"></td>
+		                  <td class="fill-toc"></td>
+		                  <td class="fill-authors"></td>
+		                  <td class="fill-title"></td>
+		                  <td class="fill-journal"></td>
+		                  <td class="fill-year"></td>
+		                  <td class="fill-link-button" id="url"></td>
+		                  <td class="fill-pdf-button" id="pdf"></td>
+		                </tr> 
+
+		                <!-- ***** 2009 ***** -->
+		               	<tr id="abstract" class="abstract-tooltip" data-number="4" data-title="Evaluation of group genetic ancestry of populations from Philadelphia and Dakar in the context of sex-biased admixture in the Americas." data-authors="Stefflova K, Dulik MC, Pai AA, Walker AH, Zeigler-Johnson C, Gueye SM, Schurr TG, and Rebbeck T" data-journal="PLOS One" data-year="2009", data-volume="4(11)" data-pages="e7842" data-url="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0007842" data-toc="", data-pdf="pdfs/stefflova_2009.pdf" data-abstract="<span style='color:#eee'> Background: Population history can be reflected in group genetic ancestry, where genomic variation captured by the mitochondrial DNA (mtDNA) and non-recombining portion of the Y chromosome (NRY) can separate female- and male-specific admixture processes. Genetic ancestry may influence genetic association studies due to differences in individual admixture within recently admixed populations like African Americans. Principal Findings: We evaluated the genetic ancestry of Senegalese as well as European Americans and African Americans from Philadelphia. Senegalese mtDNA consisted of ∼12% U haplotypes (U6 and U5b1b haplotypes, common in North Africa) while the NRY haplotypes belonged solely to haplogroup E. In Philadelphia, we observed varying degrees of admixture. While African Americans have 9–10% mtDNAs and ∼31% NRYs of European origin, these results are not mirrored in the mtDNA/NRY pools of European Americans: they have less than 7% mtDNAs and less than 2% NRYs from non-European sources. Additionally, there is <2% Native American contribution to Philadelphian African American ancestry and the admixture from combined mtDNA/NRY estimates is consistent with the admixture derived from autosomal genetic data. To further dissect these estimates, we have analyzed our samples in the context of different demographic groups in the Americas. Conclusions: We found that sex-biased admixture in African-derived populations is present throughout the Americas, with continual influence of European males, while Native American females contribute mainly to populations of the Caribbean and South America. The high non-European female contribution to the pool of European-derived populations is consistently characteristic of Iberian colonization. These data suggest that genomic data correlate well with historical records of colonization in the Americas. </span>">
+		                  <td class="fill-number"></td>
+		                  <td class="fill-toc"></td>
+		                  <td class="fill-authors"></td>
+		                  <td class="fill-title"></td>
+		                  <td class="fill-journal"></td>
+		                  <td class="fill-year"></td>
+		                  <td class="fill-link-button" id="url"></td>
+		                  <td class="fill-pdf-button" id="pdf"></td>
+		                </tr>
+		                <tr id="abstract" class="abstract-tooltip" data-number="3" data-title="Effect of read-mapping biases on detecting allele-specific expression from RNA-sequencing data." data-authors="Degner JF, Marioni JC, Pai AA, Pickrell JK, Nkadori E, Gilad Y, and Pritchard JK" data-journal="Bioinformatics" data-year="2009", data-volume="25(24)" data-pages="3207-12" data-url="https://academic.oup.com/bioinformatics/article/25/24/3207/235151" data-toc="", data-pdf="pdfs/degner_2009.pdf" data-abstract="<span style='color:#eee'> Motivation: Next-generation sequencing has become an important tool for genome-wide quantification of DNA and RNA. However, a major technical hurdle lies in the need to map short sequence reads back to their correct locations in a reference genome. Here, we investigate the impact of SNP variation on the reliability of read-mapping in the context of detecting allele-specific expression (ASE). Results: We generated 16 million 35 bp reads from mRNA of each of two HapMap Yoruba individuals. When we mapped these reads to the human genome we found that, at heterozygous SNPs, there was a significant bias toward higher mapping rates of the allele in the reference sequence, compared with the alternative allele. Masking known SNP positions in the genome sequence eliminated the reference bias but, surprisingly, did not lead to more reliable results overall. We find that even after masking, ∼5–10% of SNPs still have an inherent bias toward more effective mapping of one allele. Filtering out inherently biased SNPs removes 40% of the top signals of ASE. The remaining SNPs showing ASE are enriched in genes previously known to harbor cis-regulatory variation or known to show uniparental imprinting. Our results have implications for a variety of applications involving detection of alternate alleles from short-read sequence data. </span>">
+		                  <td class="fill-number"></td>
+		                  <td class="fill-toc"></td>
+		                  <td class="fill-authors"></td>
+		                  <td class="fill-title"></td>
+		                  <td class="fill-journal"></td>
+		                  <td class="fill-year"></td>
+		                  <td class="fill-link-button" id="url"></td>
+		                  <td class="fill-pdf-button" id="pdf"></td>
+		                </tr> 
+
+		                <!-- ***** 2008 ***** -->
+		                <tr id="abstract" class="abstract-tooltip" data-number="2" data-title="Genetic variation in the enigmatic Altaian Kazakhs of South-Central Russia: insights into Turkic population history." data-authors="Gokcumen O, Dulik MC, Pai AA, Zhadanov SI, Rubenstein S, Osipova LP, Andreenkov OV, Tabikhanova LE, Gubina MA, Labuda D, and Schurr TG" data-journal="American Journal of Physical Anthropology" data-year="2008", data-volume="136(3)" data-pages="278-293" data-url="http://onlinelibrary.wiley.com/doi/10.1002/ajpa.20802/full" data-toc="", data-pdf="pdfs/gokcumen_2008.pdf" data-abstract="<span style='color:#eee'> The Altaian Kazakhs, a Turkic speaking group, now reside in the southern part of the Altai Republic in south-central Russia. According to historical accounts, they are one of several ethnic and geographical subdivisions of the Kazakh nomadic group that migrated from China and Western Mongolia into the Altai region during the 19th Century. However, their population history of the Altaian Kazakhs and the genetic relationships with other Kazakh groups and neighboring Turkic-speaking populations is not well understood. To begin elucidating their genetic history, we analyzed the mtDNAs from 237 Altaian Kazakhs through a combination of SNP analysis and HVS1 sequencing. This analysis revealed that their mtDNA gene pool was comprised of roughly equal proportions of East (A-G, M7, M13, Y and Z) and West (H, HV, pre-HV, R, IK, JT, X, U) Eurasian haplogroups, with the haplotypic diversity within haplogroups C, D, H, and U being particularly high. This pattern of diversity likely reflects the complex interactions of the Kazakhs with other Turkic groups, Mongolians, and indigenous Altaians. Overall, these data have important implications for Kazakh population history, the genetic prehistory of the Altai-Sayan region, and the phylogeography of major mitochondrial lineages in Eurasia. </span>">
+		                  <td class="fill-number"></td>
+		                  <td class="fill-toc"></td>
+		                  <td class="fill-authors"></td>
+		                  <td class="fill-title"></td>
+		                  <td class="fill-journal"></td>
+		                  <td class="fill-year"></td>
+		                  <td class="fill-link-button" id="url"></td>
+		                  <td class="fill-pdf-button" id="pdf"></td>
+		                </tr> 
+
+		                <!-- ***** 2006 ***** -->
+		                <tr id="abstract" class="abstract-tooltip" data-number="1" data-title="NOTCH2 mutations cause Alagille syndrome, a heterogeneous disorder of the notch signaling pathway." data-authors="McDaniell R, Warthen DM, Sanchez-Lara PA, Pai A, Krantz ID, Piccoli DA, and Spinner NB" data-journal="American Journal of Human Genetics" data-year="2006", data-volume="79" data-pages="169-173" data-url="http://www.sciencedirect.com/science/article/pii/S0002929707600196" data-toc="", data-pdf="pdfs/mcdaniell_2006.pdf" data-abstract="<span style='color:#eee'> Alagille syndrome (AGS) is caused by mutations in the gene for the Notch signaling pathway ligand Jagged1 (JAG1), which are found in 94% of patients. To identify the cause of disease in patients without JAG1 mutations, we screened 11 JAG1 mutation-negative probands with AGS for alterations in the gene for the Notch2 receptor (NOTCH2). We found NOTCH2 mutations segregating in two families and identified five affected individuals. Renal manifestations, a minor feature in AGS, were present in all the affected individuals. This demonstrates that AGS is a heterogeneous disorder and implicates NOTCH2 mutations in human disease. </span>">
+		                  <td class="fill-number"></td>
+		                  <td class="fill-toc"></td>
+		                  <td class="fill-authors"></td>
+		                  <td class="fill-title"></td>
+		                  <td class="fill-journal"></td>
+		                  <td class="fill-year"></td>
+		                  <td class="fill-link-button" id="url"></td>
+		                  <td class="fill-pdf-button" id="pdf"></td>
+		                </tr>
+		              </tbody>
+		            </table>
+		            </div>
+		          </div>
+		        </div>
+		      </div>
+	    </section>
+	  </div>
+
+  <!-- ********** CONTACT ********** -->
+		  <section class="contact">
+		  	<div class="row">
+		  		<div class="small-12 columns">
+		  			<div class="panel panel-primary" style="background:#ffffff">
+		  				<h1 class="section-header"><span class="anchor" id="contact"></span> contact </h1>
+		  				<div class="row about-boxes">
+		  				<!-- CONTACT SECTION -->
+		  					<div class="small-12 medium-6 large-6 columns">
+		  						<h2 class="panel-header"> </h2>
+		  						<p> The Pai Lab </br>
+		  							RNA Therapeutics Institute </br>
+		  							UMass Medical School </br>
+		  							368 Plantation Street, AS5-2057</br>
+		  							Worcester, MA 01605<br><br>
+		  							wet-lab: AS5-2003/2004</br>
+		  							dry-lab: AS5-2053/2055<br><br>
+		  							athma.pai@umassmed.edu <br>
+		  							<i>Admin</i>: Ann Powers (ann.powers@umassmed.edu)
+		  						</p>
+		  					</div>
+		  					<div class="small-12 medium-6 large-6 columns">
+		  						<p><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d205837.96496703866!2d-71.3922765!3d42.33644470000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e4062aec4828ed%3A0x758672f7bde3eaa4!2s368+Plantation+St%2C+Worcester%2C+MA+01605!5e0!3m2!1sen!2sus!4v1516652570188" width="500" height="400" frameborder="0" style="border:0" allowfullscreen></iframe></p>
+		  					</div>
 						</div>
 					</div>
 				</div>
-			</section>
+			</div>
+		  </section>
 
-		<!-- Two -->
-			<section id="research" class="main style2">
-				<div class="container">
-					<div class="row 150%">
-						<div class="6u 12u$(medium)">
-							<ul class="major-icons">
-								<li><span class="icon major"><img src="images/research_imgs/dnase.png" /></span></li>
-								<li><span class="icon major"><img src="images/research_imgs/decay.png" /></span></li>
-								<li><span class="icon major"><img src="images/research_imgs/pathogen.png" /></span></li>
-								<li><span class="icon major"><img src="images/research_imgs/splicing.png" /></span></li>
-								<li><span class="icon major"><img src="images/research_imgs/recursive.png" /></span></li>
-								<li><span class="icon major"><img src="images/research_imgs/rates.png" /></span></li>
-							</ul>
-						</div>
-						<div class="6u$ 12u$(medium)">
-							<header class="major">
-								<h2>RESEARCH</h2>
-							</header>
-							<p style="text-align:justify">Phenotypic variation in humans is driven by coordinated changes in gene regulation that allow a continuum of gene expression levels to arise from the same genome sequence. Recent studies have provided unprecedented insight into how individual molecular mechanisms regulate changes in mRNA levels and revealed that substantial transcriptome diversity arises from the differential processing of nascent RNAs. Many studies of gene expression focus on characterizing steady-state mRNA levels, even though living systems are inherently dynamic. Thus, a key unanswered question underlying functional genomics is: how do the dynamics of individual molecular processes combine to influence the cellular transcriptome?</p>
-							<p style="text-align:justify">The Pai Lab investigates how the kinetics of disparate steps of gene regulation are regulated synergistically to influence steady-state mRNA levels. In particular, we focus on characterizing the speed and efficiency of essential steps in the life-cycle of an RNA molecule - transcriptional elongation, pre-mRNA splicing, and cleavage and polyadenylation - to profile how these steps are coordinated to create mature mRNA molecules.</p>
-						</div>
-					</div>
-				</div>
-			</section>
 
-		<!-- Three -->
-			<section id="people" class="main style1 special">
-				<div class="container">
-					<header class="major">
-						<h2>PEOPLE</h2>
-					</header>
-					<!--<p>Ante nunc accumsan et aclacus nascetur ac ante amet sapien sed.</p> -->
-					<div class="row 150%">
-						<div class="4u 12u$(medium)">
-							<span class="image fit"><img src="images/AthmaPai.jpg" alt="" /></span>
-							<h3><b>Athma A. Pai, Ph.D.</b><br>Principal Investigator</h3>
-							<p> <i>Ph.D.,</i> University of Chicago <br> <i>Postdoctoral Research,</i> MIT </p>
-							<!--<ul class="actions">
-								<li><a href="#" class="button">More</a></li>
-							</ul>-->
- 						</div>
-						<div class="4u 12u$(medium)">
-							<span class="image fit"><img src="images/people-09.png" alt="" /></span>
-							<h3><b>Join us!</b><br></h3>
-							<p>We currently have openings for research technician and postdoctoral positions. Please <a href="mailto: athma.pai@umassmed.edu?Subject=position%20in%20Pai%20lab">e-mail</a> Athma for more details! </p>
-							<!--<ul class="actions">
-								<li><a href="#" class="button">More</a></li>
- 							</ul>-->
- 						</div>
- 						 <div class="4u$ 12u$(medium)">
-							<span class="image fit"><img src="images/people-08.png" alt="" /></span>
-							<h3><b>Rotations available!</b><br></h3>
-							<p>We are actively recruiting graduate students. Please <a href="mailto: athma.pai@umassmed.edu?Subject=rotation%20in%20Pai%20lab">e-mail</a> Athma to discuss rotation projects! </p>
-							<!--<ul class="actions">
-								<li><a href="#" class="button">More</a></li>
-							</ul> -->
-						</div>
-					</div>
-				</div>
-			</section>
+ <!-- ********** PICTURES ********** -->
+	  <ul class="orbit" data-orbit>
+	    <li>
+	      <img class="orbit-img" src="images/ShermanCenter.jpg" />
+	      <div class="orbit-caption">
+	        Our home in Worcester: the Albert Sherman Center @ UMMS
+	      </div>
+	    </li>
+	    <li class="active">
+	      <img class="orbit-img" src="images/glassware2.jpg" />
+	      <div class="orbit-caption">
+	        Lab is open for business!
+	      </div>
+	    </li>
+	    <!--<li>
+	      <img class="orbit-img" src="http://placehold.it/1200x200/?text=slide 3" />
+	      <div class="orbit-caption">
+	        Caption Three.
+	      </div>
+	    </li>-->
+	  </ul>
 
-		<!-- Four -->
-			<section id="publications" class="main style2">
-				<div class="container">
-					<header class="major special">
-						<h2>Publications</h2>
-					</header>
-					<header class="minor special">
-						<ul class="actions uniform special">
-							<li><a href="http://scholar.google.com/citations?user=jLjOCMAAAAAJ&hl=en" class="button special small">Google Scholar</a></li>
-							<li><a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=athma+pai" class="button small">Pubmed</a></li>
-						</ul>
-					</header>
-					<!--<p>Sed lacus nascetur ac ante amet sapien.</p>-->
+ <!-- ********** FOOTER ********** -->
+	  <footer>
+	      <div class="row">
+	        
+	        <div class="small-12 medium-4 large-4 columns">
+		        <div class="copylefts">
+		            <p>Contact: <a href="mailto:athma.pai@umassmed.edu">athma.pai@umassmed.edu</a></p>
+		            <p>368 Plantation Street, Worcester MA 01605</p>
+		        </div>
+	        </div>
+	        
+	        <div class="small-12 medium-4 large-4 columns">
+	        	<div class="text-center"><a href="http://www.umassmed.edu"><img class="footer-logo" src="images/umms-inf-blue.svg" onmouseover="this.src='images/umms-inf-reverse.svg'" onmouseout="this.src='images/umms-inf-blue.svg'"></a> <a href="http://www.umassmed.edu/rti/"><img class="footer-logo" src="images/umass_rna-intitute_logo-01.png" onmouseover="this.src='images/umass_rna-intitute_logo-02.png'" onmouseout="this.src='images/umass_rna-intitute_logo-01.png'"></a></div>
+	        </div>
+	        
+	        <div class="small-12 medium-4 large-4 columns">
+	          <div class="copyrights">
+	            <p>Copyright © 2017 the Pai Group.</p>
+	            <p><a href="https://stuff.mit.edu/~melville" class="web-credit">Web Design: Jo Melville</a></p>
+	          </div>
+	        </div>
 
-					<section>
-						<h4><u>Preprints</u></h4>
+	      </div>
+	  </footer>
 
-							<p><span class="icon fa-file-text-o", align="justify"></span> <b>Pai AA</b>, Henriques T, Paggi J, Burkholder A, Adelman K, Burge CB. <a href="https://www.biorxiv.org/content/early/2017/02/13/107995">Intron Length and Recursive Sites are Major Determinants of Splicing Efficiency in Flies</a> <i>bioRxiv</i>. doi: 10.1101/107995.</p>
+ <!-- ********** BACK TO TOP BUTTON ********** -->
+	  <a href="#" class="btn_fancy" id="back_top">
+	    <div class="solid_layer"></div>
+	    <!-- <div class="border_layer"></div> -->
+	    <div class="text_layer">&uarr;</div>
+	  </a>
 
-							<p><span class="icon fa-file-text-o", align="justify"></span> Aguiar D, Cheng L, Dumitrascu B, Mordelet F, <b>Pai AA</b>, Engelhardt BE. <a href="https://arxiv.org/abs/1703.08260">BIISQ: Bayesian nonparametric discovery of Isoforms and Individual Specific Quantification from RNA-seq data.</a> <i>aRxiv</i>. doi: 1703.08260v1.</p>
 
-							<p><span class="icon fa-file-text-o", align="justify"></span> McDowell IC, <b>Pai AA</b>, Guo C, Vockley CM, Brown CD, Reddy TE, Engelhardt BE. <a href="https://www.biorxiv.org/content/early/2016/03/19/044719">Many long intergenic non-coding RNAs distally regulate mRNA gene expression levels.</a> <i>bioRxiv</i>. doi:10.1101/044719.</p>
+ <!-- ********** PEOPLE PROFILES ********** -->
+	  <!-- profile modals -->
 
-						<h4><u>Peer-Reviewed Publications (full list)</u></h4>
+	  <!-- add: publications link, short blurb about project -->
+	  <div class="small reveal-modal" id="athmapai" data-reveal>
+	    <div class="row">
+	      <div class="large-5 columns">
+	        <img src="images/people/AthmaPai.jpg" class="thumbnail profile-full" />
+	      </div>
+	      <div class="large-7 columns profile-box">
+	        <h2 class="full-profile-name text-center">Athma Pai</h2>
+	        <hr />
+	        <p class="lead text-center"><a href="mailto:athma.pai@umassmed.edu">athma.pai@umassmed.edu</a></p>
+	        <hr />
+	      </div>
+	      <p class="profile-text">B.A. University of Pennsylvania 2007<br />Ph.D. University of Chicago 2012<br />Jane Coffin Childs Postdoctoral Fellow, MIT 2012-17</br><a href="http://scholar.google.com/citations?user=jLjOCMAAAAAJ&hl=en">Google Scholar</a> | <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=athma+pai">PubMed</a> </p>
+	      <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+	    </div>
+	  </div>
 
-							<p><span class="icon fa-file-text-o", align="justify"></span> Richards AL, Watza D, Findley A, Alazizi A, Wen X, <b>Pai AA</b>, Pique-Regi R, Luca F. <a href="https://www.biorxiv.org/content/early/2017/04/26/119974">Environmental perturbations lead to extensive directional shifts in RNA processing.</a> <i>PLOS Genetics</i> (in press).
+	  <div class="small reveal-modal" id="nidajaveed" data-reveal>
+	    <div class="row">
+	      <div class="large-5 columns">
+	        <img src="images/people/NidaJaveed.jpeg" class="thumbnail profile-full" />
+	      </div>
+	      <div class="large-7 columns profile-box">
+	        <h2 class="full-profile-name text-center">Nida Javeed</h2>
+	        <hr />
+	        <p class="lead text-center"><a href="mailto:nida.javeed@umassmed.edu">nida.javeed@umassmed.edu</a></p>
+	        <hr />
+	      </div>
+	      <p class="profile-text">B.S. Microbiology, University of California, Davis 2012</p>
+	      <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+	    </div>
+	  </div>
 
-							<p><span class="icon fa-file-text-o", align="justify"></span> <b>*Pai AA</b>, *Baharian G, Sabourin AP, Nedelec Y, Grenier J-C, Siddle KJ, Dumaine A, Yotova Y, Burge CB, Barreiro LB. <a href="http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1006338">Widespread shortening of 3' untranslated regions and increased exon inclusion characterize the human macrophage response to infection.</a> <i>PLOS Genetics</i>. 2016. 12(9):e1006338. </p>
+	  <div class="small reveal-modal" id="you" data-reveal>
+	    <div class="row">
+	      <div class="large-5 columns">
+	        <img src="images/people/people-09.png" class="thumbnail profile-full" />
+	      </div>
+	      <div class="large-7 columns profile-box">
+	        <h2 class="full-profile-name text-center">You?</h2>
+	        <hr />
+	        <hr />
+	      </div>
+	      <p class="profile-text text-center">We have open opportunies to join us! Please see details <a href="pai-lab.org/#join">here</a>.</p>
+	      <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+	    </div>
+	  </div>
 
-							<p><span class="icon fa-file-text-o", align="justify"></span> Chen Y, <b>Pai AA</b>, Herudek J, Lubas M, Meola N, Jarvelin AI, Andersson R, Pelechano V, Steinmetz LM, Jensen TH, Sandelin A. <a href="https://www.nature.com/ng/journal/v48/n9/abs/ng.3616.html">Principles for RNA metabolism and alternative transcription initiation within closely spaced promoters.</a> <i>Nature Genetics</i>. 2016. 48:984-994.</p>
+	  <div class="large reveal-modal" id="postdoc" data-reveal>
+	    <div class="row">
+	      <p class="profile-text text-justify"> The Pai lab at UMass Medical School is seeking a postdoctoral candidate in the field of RNA biology and functional genomics with relevant experience in experimental and/or computational biology. Our research combines high-dimensional computational analyses with state-of-the-art genetic, molecular, and cellular genomic techniques to probe the molecular mechanisms of RNA maturation (including transcription, splicing and 3' end processing). We specifically focus on characterizing the kinetics of RNA processing steps to understand the overall speed and efficiency at which RNA molecules are created and processed to ensure proper cellular functions.</p>
+	      <p class="profile-text text-justify"> Ideal applicants will have a strong background in RNA biology, functional genomics, systems biology, or computational biology/bioinformatics. We desire a candidate with both experimental and computational skills, but encourage applications from scientists motivated to expand their skillset to include both approaches. Applicants must be self-motivated, creative, and able to work in a highly collaborative and interdisciplinary environment.</p>
+	      <p class="profile-text text-justify"> <b>Responsibilities include:</b>
+	      <ul>
+	      	<li>Develop and/or apply new molecular, biochemical, and/or computational approaches, perform data analyses, and supervise/train technicians or graduate students.</li>
+	      	<li>Take a strong lead in project design and management for multiple research projects, generate and interpret data, and collaborate with other team members.</li>
+	      	<li>Report results by regularly presenting at scientific conferences and writing scientific manuscripts.</li>
+	      	<li>Tackle cutting-edge problems in biomedical science, interact with world class scientists, and gain experiences or develop skillsets for her/his next career stage.</li>
+	      </ul> </p>
+	      <p class="profile-text text-justify"> <b>Desired qualifications:</b>
+	      <ul>
+	      	<li>Ph.D. in biological sciences (e.g. molecular or cellular biology, genetics, biochemistry), computational sciences (e.g. bioinformatics, computer science, statistics) or related discipline. Ph.D. candidates anticipating thesis defense are encouraged to apply for hire after completion of Ph.D.</li>
+	      	<li>Relevant experimental and/or computational biology research experience, preferably with strong scientific knowledge in eukaryotic RNA biology, gene regulation, or genetics and genomics.</li>
+	      	<li>Experience with high-throughput sequencing data generation or analysis, preferably for genome- or transcriptome-wide datasets (e.g. RNA-seq, nascent RNA-seq, ChIP-seq, DNase/ATAC-seq, CLIP-seq).</li>
+	      	<li>Familiarity with Unix/Linux shell and at least one of the following programming languages: C++, PERL, Python, or R.</li>
+	      	<li> Excellent oral and written communication skills in Engish.</li>
+	      	<li> Previous record of independent research, including conference presentations and first-/co-author publications.</li>
+	      	<li>Excellent teamwork, time management, and organizational skills, with the ability to meet deadlines and multi-task across multiple research projects.</li>
+	      </ul></p>
+	      <p class="profile-text text-justify"> <b>To apply, please e-mail the following to Athma Pai at <a href="mailto: athma.pai@umassmed.edu?Subject=postdoctoral%20position%20in%20Pai%20lab">athma.pai@umassmed.edu</a></b>:
+	      <ol>
+	      	<li><b>Curriculum vitae, including complete list of publications and pre-prints.</b></li>
+	      	<li><b>Contact information for three referees.</b></li>
+	      	<li><b>Summary of your present research (1 page max).</b></li>
+	      	<li><b>Outline of your future research interests (1 page max).</b></li>
+	      </ol> </p>
+	      <p class="profile-text text-justify"> This position is in the <a href="https://www.umassmed.edu/rti/">RNA Therapeutics Institute</a> at the University of Massachusetts Medical School in Worcester, MA. To learn more about the Pai lab, please visit our <a href="http://www.pai-lab.org">website</a>. The RNA Therapeutics Institute is an exceptional training environment, with many interactive and highly collaborative research groups uniting researchers studying fundamental RNA mechanisms with the active development of RNA-based therapeutic strategies. The department has strong intellectual and proximity-based links with neighboring groups in <a href="https://www.umassmed.edu/bioinformatics/">Bioinformatics and Integrative Biology</a> and the <a href="https://www.umassmed.edu/psb/">Program in Systems Biology</a> at UMass Medical School, creating a stimulating interdisciplinary research environment with world-class expertise in many disciplines relevant for our work.</p>
+	      <p class="profile-text text-justify">UMass Medical School is committed to being an equal opportunity and affirmative action employer and recognizes the power of a diverse community. We encourage applications from protected veterans, individuals with disabilities and those with varied experiences, perspectives and backgrounds to consider UMass Medical School as their employer of choice.</p>
+	      <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+	    </div>
+	  </div>
 
-							<p><span class="icon fa-file-text-o", align="justify"></span> Pacis A, Tailleux L, Lambourne J, Yotova Y, Dumaine A, Danckaert A, Luca F, Grenier J-C, Hansen K, Gicquel B, Yu M, <b>Pai AA</b>, Tung J, He C, Pastinen T, Pique-Regi R, Gilad Y, Barreiro LB. <a href="http://genome.cshlp.org/content/early/2015/09/21/gr.192005.115.full.pdf+html">Bacterial Infection Remodels the DNA Methylation Landscape of Human Dendritic Cells.</a> <i>Genome Research</i>. 2015. 25:1-11.</p>
 
-							<p><span class="icon fa-file-text-o", align="justify"></span> <b>Pai AA</b>, Pritchard JK, Gilad Y. <a href="http://www.ncbi.nlm.nih.gov/pubmed/25569255">The Genetic and Mechanistic Basis for Variation in Gene Regulation.</a> <i>PLOS Genetics</i>. 2015. 11(1):e1004857.<br>
-							<i class="icon fa-tag"></i><a href="http://f1000.com/prime/725301323"> F1000</a></p>
 
-							<p><span class="icon fa-file-text-o", align="justify"></span> <b>Pai AA</b>, Gilad Y. <a href="http://www.ncbi.nlm.nih.gov/pubmed/25215415">Comparative studies of gene regulatory mechanisms.</a> <i>Curr Opp Genet Dev</i>. 2014. 29C:68-74.</p>
+    <!--    Javascript    -->
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/touchSwipe.min.js"></script>
+    <script type="text/javascript" src="js/DataTables/datatables.js"></script>
+    <script type="text/javascript" src="js/easing.js"></script>
+    <script type="text/javascript" src="js/foundation.min.js"></script>
+    <script type="text/javascript" src="js/foundation/foundation.topbar.js"></script>
+    <script type="text/javascript" src="js/foundation/foundation.tab.js"></script>
+    <script type="text/javascript" src="js/carouFredSel.js"></script>
+    <script type="text/javascript" src="js/scrollTo.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/tipped/tipped.js"></script>
 
-							<p><span class="icon fa-file-text-o", align="justify"></span> Romero IG, <b>Pai AA</b>, Tung J, Gilad Y. <a href="http://www.ncbi.nlm.nih.gov/pubmed/24885439"> RNA-seq: Impact of RNA degradation on transcript quantification.</a> <i>BMC Biology</i>. 2014. 12(1), 42. </span>
+  	<!-- pub table js -->
+  	<script>
+  	  $(document).ready(function () {
+  	  	$(".fill-toc").html(getToC);
+    	function getToC(i,val) {
+      	  var toc = (($(this).parent().attr('data-image') === '') ? '' : ("<img src='abstracts/"+ 
+      	  	$(this).parent().attr('data-image') + "' class='thumbnail table-img' />"))
+      	  return toc;
+    	}
+  	    $(".fill-authors").html(getAuthors);
+  	    function getAuthors(i,val) {
+  	      var authors = $(this).parent().attr('data-authors');
+  	      return authors;
+  	    }
+  	    $(".fill-title").html(getTitle);
+  	    function getTitle(i,val) {
+  	      var title = $(this).parent().attr('data-title');
+  	      return title;
+  	    }
+  	    $(".fill-journal").html(getJournal);
+    	function getJournal(i,val) {
+      	  var journal = $(this).parent().attr('data-journal');
+      	  return journal;
+    	}
+  	    $(".fill-year").html(getYear);
+  	    function getYear(i,val) {
+  	      var year = $(this).parent().attr('data-year');
+  	      return year;
+  	    }    	
+  	    $(".fill-link-button").html(getLinkButton);
+  	    function getLinkButton(i,val) {
+  	      var linkButton = '<a target="_blank" class="button tiny vert-center fill-link" onclick="event.cancelBubble=true;">link</a>';
+  	      return linkButton;
+  	    }
+  	    $(".fill-pdf-button").html(getPdfButton);
+  	    function getPdfButton(i,val) {
+  	      var pdfButton = '<a target="_blank" class="button tiny vert-center fill-pdf" onclick="event.cancelBubble=true;">pdf</a>';
+  	      return pdfButton;
+  	    }
 
-							<p><span class="icon fa-file-text-o", align="justify"></span> *Gaffney DJ, *McVicker G, <b>Pai AA</b>, Fondufe-Mittendorf YN, Lewellen N, Michelini K, Widom J, Gilad Y, Pritchard JK. <a href="http://www.ncbi.nlm.nih.gov/pubmed/23166509"> Controls of nucleosome positioning in the human genome.</a> <i>PLOS Genetics</i>. 2012. 8(11):e1003036. </p>
+  	    $(".fill-citation-button").html(getCitationButton);
+  	    function getCitationButton(i,val) {
+  	      var citationButton = '<a class="button tiny vert-center citation-tooltip">cite</a>';
+  	      return citationButton;
+  	    }
+  	    $(".fill-link").attr("href", getURL);
+  	    function getURL(i,val) {
+  	      var url = $(this).parent().parent().attr('data-url');
+  	      return url;
+  	    }
+  	    $(".fill-pdf").attr("href", getPDF);
+  	    function getPDF(i,val) {
+  	      var url = $(this).parent().parent().attr('data-pdf');
+  	      return url;
+  	    }
+  	    $(".fill-volume").html(getVolume);
+  	    function getVolume(i,val) {
+  	      var volume = $(this).parent().attr('data-volume');
+  	      return volume;
+  	    }
+  	    $(".fill-pages").html(getPages);
+  	    function getPages(i,val) {
+  	      var pages = $(this).parent().attr('data-pages');
+  	      return pages;
+  	    }
+  	    $(".fill-number").html(getNumber);
+  	    function getNumber(i,val) {
+  	      var number = $(this).parent().attr('data-number');
+  	      return number;
+  	    }
+  	    $(".fill-citation").html(getCitation);
+  	      function getCitation(i,val) {
+  	        var citation = '"' + $(this).parent().attr('data-title') + '" ' + $(this).parent().attr('data-authors') + " " + $(this).parent().attr('data-journal') + " " + $(this).parent().attr('data-year') + (($(this).parent().attr('data-volume') === '') ? '' : (", " + $(this).parent().attr('data-volume'))) + (($(this).parent().attr('data-pages') === '') ? '' : (", " + $(this).parent().attr('data-pages'))) + "."
+  	        return citation.replace(/<(?:.|\n)*?>/gm, '');
+  	    }
+  	    $.urlParam = function(name){
+  	      var results = new RegExp('[\\?&]' + name + '=([^&#]*)').exec(window.location.href);
+  	      if (!results) { 
+  	        return ''; 
+  	      }
+  	      return decodeURI(results[1]) || '';
+  	    }
+  	  });
+  	</script>
+  	<script type="text/javascript">
+  	  $(document).ready(function() {
+  	    Tipped.create('.citation-tooltip', function(element) {
+  	      return {
+  	        content: '"' + $(element).parent().parent().data('title') + '" ' + $(element).parent().parent().data('authors') + " <em>" + $(element).parent().parent().data('journal') + "</em> <strong>" + $(element).parent().parent().data('year') + "</strong>" + (($(element).parent().parent().data('volume') === '') ? '' : (", <em>" + $(element).parent().parent().data('volume'))) + "</em>" + (($(element).parent().parent().data('pages') === '') ? '' : (", " + $(element).parent().parent().data('pages'))) + "."
+  	       };
+  	     }, {
+  	      showOn: 'click',
+  	      hideOn: 'click',
+  	      hideOnClickOutside: true,
+  	      maxWidth: 300
+  	    });
+  	    Tipped.create('.abstract-tooltip', function(element) {
+  	      return {
+  	         title: "<div class='text-center'>" + $(element).data('title') +"</div>",
+  	         content: "<div class='row abstract-row'><div class='small-12 columns'>" + (($(element).data('image') === '') ? '' : ("<img src='abstracts/"+ $(element).data('image') + "' class='thumbnail abstract-img' />")) + "<div class='text-justify abstract-text'><strong>Abstract" + (($(element).data('abstract') === '') ? ' unavailable for this paper.</strong>' : (":&nbsp;</strong>" + $(element).data('abstract'))) + "</div></div></div>"
+  	       };
+  	     }, {
+  	      hideOn: 'click',
+  	      showOn: 'click',
+  	      position: 'topleft',
+  	      hideOnClickOutside: true,
+  	      close: true,
+  	      maxWidth: 1000,
+  	      title: true
+  	    });
+  	  });
+  	</script>
+  	<script type='text/javascript'>
+  	  $(document).ready(function() {
+  	    Tipped.create('.boxes .box');
+  	  });
+  	</script>
+  	<script type="text/javascript">
+  	  $(document).ready(function() {
+  	    var pubTable = $('#ptable').DataTable({
+  	      "aaSorting": [[ 0, "desc" ]],
+  	      "iDisplayLength": 10,
+  	      "aLengthMenu": [[5,10,25,-1],[5,10,25,'All']],
+  	      /*"aoColumns": [null, null, {"sType":"html"}, {"sType":"html"}, null, null, null],*/
+  	      "aoColumns": [null, {"sType":"html"}, {"sType":"html"}, {"sType":"html"}, {"sType":"html"}, {"sType":"html"}, {"sType":"html"}, null],
+  	      "columnDefs": [
+  	          {
+  	              /*"targets": [ -1, -2, -3, -4 ],*/
+  	              "targets": [1, 6, 7],
+  	              "bSortable": false
+  	          },
+  	          {
+  	              "targets": [ -3],
+  	              "visible": true
+  	          }
+  	      ],
+  	      responsive: true
+  	    } );
+  	    pubTable.search( $.urlParam('search') ).draw();
+  	  } );
+  	</script>
 
-							<p><span class="icon fa-file-text-o", align="justify"></span> <b>Pai AA</b>, Cain CE, Man O, Veyrieras J-B, De Leon S, Lewellen N, Degner JF, Gaffney DJ, Pickrell JK, Stephens M, Pritchard JK, Gilad Y. <a href="http://www.ncbi.nlm.nih.gov/pubmed/23071454"> The contribution of RNA decay quantitative trait loci to inter-individual variation in steady-state gene expression levels.</a> <i>PLOS Genetics</i>. 2012. 8(10):e1003000. <br>
-							<i class="icon fa-tag"></i><a href="http://www.nature.com/ng/journal/v44/n12/full/ng.2488.html"> Nature Genetics</a><br>
-							<i class="icon fa-tag"></i><a href="http://www.nature.com/nrg/journal/v13/n12/full/nrg3378.html">Nature Reviews Genetics</a></br></p>
-
-							<p><span class="icon fa-file-text-o", align="justify"></span> *Iskow RC, *Gokcumen O, Abyzov A, Malukiewicz J, Zhu Q, Sukumar AT, <b>Pai AA</b>, Mills RE, Habegger L, Cusanovich DA, Rubel MA, Perry GH, Gerstein M, Stone AC, Gilad Y, Lee C. <a href="http://www.ncbi.nlm.nih.gov/pubmed/22797897"> Regulatory element copy number differences shape primate expression profiles.</a> <i>PNAS</i>. 2012. 109(31):12656-61. </p>
-
-							<p><span class="icon fa-file-text-o", align="justify"></span> *Degner JF, <b>*Pai AA</b>, *Pique-Regi R, Veyrieras J-B, Gaffney DJ, Pickrell JK, De Leon S, Michelini K, Lewellen N, Crawford GE, Stephens M, Gilad Y, Pritchard JK. <a href="http://www.ncbi.nlm.nih.gov/pubmed/22307276"> DNaseI sensitivity QTLs are a major determinant of human expression variation.</a> <i>Nature</i>. 2012. 482(7385):390-394. <br>
-							<i class="icon fa-tag"></i><a href="http://f1000.com/prime/14062956"> F1000</a><br>
-							<i class="icon fa-trophy"></i><a href="http://www.iscb.org/recomb-regsysgen2013-program/recomb-regsysgen2013-top10-paper-awards"> RECOMB Regulatory/Systems Genomics Top 10</a></br></p>
-
-							<p><span class="icon fa-file-text-o", align="justify"></span> Cusanovich DA, Billstrand C, Zhou X, Chavarria C, De Leon S, Michelini K, <b>Pai AA</b>, Ober C, Gilad Y. <a href="http://www.ncbi.nlm.nih.gov/pubmed/22286170"> The Combination of a Genome-Wide Association Study of Lymphocyte Count and Analysis of Gene Expression Data Reveals Novel Asthma Candidate Genes.</a> <i>Human Molecular Genetics</i>. 2012. 21(9):2111-2113. </p>
-
-							<p><span class="icon fa-file-text-o", align="justify"></span> Gaffney DJ, Veyrieras J-B, Degner JF, Pique-Regi R, <b>Pai AA</b>, Crawford GE, Stephens M, Gilad Y, Pritchard JK. <a href="http://www.ncbi.nlm.nih.gov/pubmed/22293038"> Dissecting the regulatory architecture of gene expression QTLs.</a> <i>Genome Biology</i>. 2012. 13(1):R7.</p>
-
-							<p><span class="icon fa-file-text-o", align="justify"></span> *Barreiro LB, *Tailleux L, <b>Pai AA</b>, Gicquel B, Marioni JC, Gilad Y. <a href="http://www.ncbi.nlm.nih.gov/pubmed/22233810"> Deciphering the genetic architecture of immune responses to Mycobacterium tuberculosis infection.</a> <i>PNAS</i>. 2012. 109(4):1204-1209. </p>
-
-							<p><span class="icon fa-file-text-o", align="justify"></span> <b>Pai AA</b>, Bell JT, Marioni JC, Pritchard JK, Gilad Y. <a href="http://www.ncbi.nlm.nih.gov/pubmed/21383968"> A Genome-wide study of DNA methylation patterns and gene expression levels in multiple human and chimpanzee tissues.</a> <i>PLOS Genetics</i>. 2011. 7(2):e1001316. <br>
-							<i class="icon fa-video-camera"></i><a href="http://www.youtube.com/watch?v=__l3AXlaQZw&noredirect=1"> ASHG plenary talk</a></br></p>
-
-							<p><span class="icon fa-file-text-o", align="justify"></span> Bell JT, <b>Pai AA</b>, Pickrell JK, Gaffney DJ, Pique-Regi R, Degner JF, Gilad Y, Pritchard JK. <a href="http://www.ncbi.nlm.nih.gov/pubmed/21251332"> DNA methylation patterns associate with genetic and gene expression variation in HapMap samples.</a> <i>Genome Biology</i>. 2011. 12(1):R10. </p>
-
-							<p><span class="icon fa-file-text-o", align="justify"></span> *Pique-Regi R, *Degner JF, <b>Pai AA</b>, Gaffney DJ, Gilad Y, Pritchard JK. <a href="http://www.ncbi.nlm.nih.gov/pubmed/21106904"> Accurate inference of transcription factor binding from DNA sequence and chromatin accessibility data.</a> <i>Genome Research</i>. 2010. 21(3):447-55. <br>
-							<i class="icon fa-tag"></i><a href="http://f1000.com/prime/9138956"> F1000</a></p>
-
-							<p><span class="icon fa-file-text-o", align="justify"></span> Stefflova K, Dulik MC, Barnholtz-Sloan JS, <b>Pai AA</b>, Walker AH, Rebbeck T. <a href="http://www.ncbi.nlm.nih.gov/pubmed/21253579"> Dissecting the Within-Africa Ancestry of Population of African Descent in the Americas.</a> <i>PLOS One</i>. 2011. 6(1):e14495. </p>
-
-							<p><span class="icon fa-file-text-o", align="justify"></span> Pickrell JK, <b>Pai AA</b>, Gilad Y. Pritchard JK. <a href="http://www.ncbi.nlm.nih.gov/pubmed/21151575"> Noisy splicing drives mRNA isoform diversity in human cells.</a> <i>PLOS Genetics</i>. 2010. 6(12):e1001236. <br>
-							<i class="icon fa-tag"></i><a href="http://f1000.com/prime/7937961"> F1000 </a><br>
-							<i class="icon fa-tag"></i><a href="http://www.nature.com/nrg/journal/v12/n2/full/nrg2947.html"> Nature Reviews Genetics </a></p>
-
-							<p><span class="icon fa-file-text-o", align="justify"></span> Pickrell JK, Marioni JC, <b>Pai AA</b>, Degner JF, Engelhardt BE, Nkadori E, Veyrieras J-B, Stephens M, Gilad Y, and Pritchard JK. <a href="http://www.ncbi.nlm.nih.gov/pubmed/20220758">Understanding mechanisms underlying gene expression variation in humans with RNA sequencing.</a> <i>Nature</i>. 2010. 463(7289):768-72. <br>
-							<i class="icon fa-tag"></i><a href="http://f1000.com/prime/4349956"> F1000 </a><br>
-							<i class="icon fa-comments"></i><a href="https://www.genomeweb.com/sequencing/rna-sequencing-studies-provide-insights-gene-expression-african-european-populat"> Genome Web </a><br>
-							<i class="icon fa-tag"></i><a href="http://www.nature.com/nrg/journal/v11/n5/full/nrg2786.html"> Nature Reviews Genetics</a></p>
-
-							<p><span class="icon fa-file-text-o", align="justify"></span> Stefflova K, Dulik MC, <b>Pai AA</b>, Walker AH, Zeigler-Johnson C, Gueye SM, Schurr TG, and Rebbeck T. <a href="http://www.ncbi.nlm.nih.gov/pubmed/19946364"> Evaluation of group genetic ancestry of populations from Philadelphia and Dakar in the context of sex-biased admixture in the Americas.</a> <i>PLOS One</i>. 2009. 4(11):e7842. </p>
-
-							<p><span class="icon fa-file-text-o", align="justify"></span> Degner JF, Marioni JC, <b>Pai AA</b>, Pickrell JK, Nkadori E, Gilad Y, and Pritchard JK. <a href="http://www.ncbi.nlm.nih.gov/pubmed/19808877"> Effect of read-mapping biases on detecting allele-specific expression from RNA-sequencing data.</a> <i>Bioinformatics</i>. 2009. 25(24): 3207-12. </p>
-
-							<p><span class="icon fa-file-text-o", align="justify"></span> Gokcumen O, Dulik MC, <b>Pai AA</b>, Zhadanov SI, Rubenstein S, Osipova LP, Andreenkov OV, Tabikhanova LE, Gubina MA, Labuda D, and Schurr TG. <a href="http://www.ncbi.nlm.nih.gov/pubmed/18322915"> Genetic variation in the enigmatic Altaian Kazakhs of South-Central Russia: insights into Turkic population history.</a> <i>AJPA</i>. 2008. 136(3):278-293. </p>
-
-							<p><span class="icon fa-file-text-o", align="justify"></span> McDaniell R, Warthen DM, Sanchez-Lara PA, <b>Pai A</b>, Krantz ID, Piccoli DA, and Spinner NB. <a href="http://www.ncbi.nlm.nih.gov/pubmed/16773578"> NOTCH2 mutations cause Alagille syndrome, a heterogeneous disorder of the notch signaling pathway.</a> <i>AJHG</i> 2006. 79: 169-173. </p>
-					</section>
-				</div>
-			</section>
-
-		<!-- One -->
-			<section id="one" class="main style1">
-				<div class="container">
-					<div class="row 150%">
-						<div class="6u 12u$(medium)">
-							<header class="major">
-								<h2>CONTACT</h2>
-							</header>
-							<p>The Pai Lab</br>
-								RNA Therapeutics Institute, UMMS </br>
-								368 Plantation Street, AS5-2057 </br>
-								Worcester, MA 01605<br><br>
-								athma.pai <span class="icon fa-at"></span> umassmed.edu</p>
-							<div class="7u"><span class="image fit special"><img src="images/rti.png" alt="" /></span></div>
-
-						</div>
-						<div class="6u$ 12u$(medium) important(medium)">
-							<p><iframe src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=368+Plantation+Street,+Worcester,+MA&amp;aq=0&amp;oq=368+Pl&amp;sll=42.036922,-71.683501&amp;sspn=1.999102,4.663696&amp;ie=UTF8&amp;hq=&amp;hnear=368+Plantation+St,+Worcester,+Massachusetts+01605&amp;t=m&amp;z=14&amp;ll=42.276586,-71.765615&amp;output=embed" frameborder="0" border="0" width="500" height="400"></iframe></p>
-							<!--<span class="image fit"><img src="images/pic01.jpg" alt="" /></span>-->
-						</div>
-					</div>
-				</div>
-			</section>
-
-		<!-- Five -->
-		<!--
-			<section id="five" class="main style1">
-				<div class="container">
-					<header class="major special">
-						<h2>Elements</h2>
-					</header>
-
-					<section>
-						<h4>Text</h4>
-						<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-						This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-						This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
-						<hr />
-						<header>
-							<h4>Heading with a Subtitle</h4>
-							<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-						</header>
-						<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-						<header>
-							<h5>Heading with a Subtitle</h5>
-							<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-						</header>
-						<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-						<hr />
-						<h2>Heading Level 2</h2>
-						<h3>Heading Level 3</h3>
-						<h4>Heading Level 4</h4>
-						<h5>Heading Level 5</h5>
-						<h6>Heading Level 6</h6>
-						<hr />
-						<h5>Blockquote</h5>
-						<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
-						<h5>Preformatted</h5>
-						<pre><code>i = 0;
-
-while (!deck.isInOrder()) {
-print 'Iteration ' + i;
-deck.shuffle();
-i++;
-}
-
-print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
-					</section>
-
-					<section>
-						<h4>Lists</h4>
-						<div class="row">
-							<div class="6u 12u$(medium)">
-								<h5>Unordered</h5>
-								<ul>
-									<li>Dolor pulvinar etiam.</li>
-									<li>Sagittis adipiscing.</li>
-									<li>Felis enim feugiat.</li>
-								</ul>
-								<h5>Alternate</h5>
-								<ul class="alt">
-									<li>Dolor pulvinar etiam.</li>
-									<li>Sagittis adipiscing.</li>
-									<li>Felis enim feugiat.</li>
-								</ul>
-							</div>
-							<div class="6u$ 12u$(medium)">
-								<h5>Ordered</h5>
-								<ol>
-									<li>Dolor pulvinar etiam.</li>
-									<li>Etiam vel felis viverra.</li>
-									<li>Felis enim feugiat.</li>
-									<li>Dolor pulvinar etiam.</li>
-									<li>Etiam vel felis lorem.</li>
-									<li>Felis enim et feugiat.</li>
-								</ol>
-								<h5>Icons</h5>
-								<ul class="icons">
-									<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
-								</ul>
-							</div>
-						</div>
-						<h5>Actions</h5>
-						<div class="row">
-							<div class="6u 12u$(medium)">
-								<ul class="actions">
-									<li><a href="#" class="button special">Default</a></li>
-									<li><a href="#" class="button">Default</a></li>
-								</ul>
-								<ul class="actions small">
-									<li><a href="#" class="button special small">Small</a></li>
-									<li><a href="#" class="button small">Small</a></li>
-								</ul>
-								<ul class="actions vertical">
-									<li><a href="#" class="button special">Default</a></li>
-									<li><a href="#" class="button">Default</a></li>
-								</ul>
-								<ul class="actions vertical small">
-									<li><a href="#" class="button special small">Small</a></li>
-									<li><a href="#" class="button small">Small</a></li>
-								</ul>
-							</div>
-							<div class="6u 12u$(medium)">
-								<ul class="actions vertical">
-									<li><a href="#" class="button special fit">Default</a></li>
-									<li><a href="#" class="button fit">Default</a></li>
-								</ul>
-								<ul class="actions vertical small">
-									<li><a href="#" class="button special small fit">Small</a></li>
-									<li><a href="#" class="button small fit">Small</a></li>
-								</ul>
-							</div>
-						</div>
-					</section>
-
-					<section>
-						<h4>Table</h4>
-						<h5>Default</h5>
-						<div class="table-wrapper">
-							<table>
-								<thead>
-									<tr>
-										<th>Name</th>
-										<th>Description</th>
-										<th>Price</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Item One</td>
-										<td>Ante turpis integer aliquet porttitor.</td>
-										<td>29.99</td>
-									</tr>
-									<tr>
-										<td>Item Two</td>
-										<td>Vis ac commodo adipiscing arcu aliquet.</td>
-										<td>19.99</td>
-									</tr>
-									<tr>
-										<td>Item Three</td>
-										<td> Morbi faucibus arcu accumsan lorem.</td>
-										<td>29.99</td>
-									</tr>
-									<tr>
-										<td>Item Four</td>
-										<td>Vitae integer tempus condimentum.</td>
-										<td>19.99</td>
-									</tr>
-									<tr>
-										<td>Item Five</td>
-										<td>Ante turpis integer aliquet porttitor.</td>
-										<td>29.99</td>
-									</tr>
-								</tbody>
-								<tfoot>
-									<tr>
-										<td colspan="2"></td>
-										<td>100.00</td>
-									</tr>
-								</tfoot>
-							</table>
-						</div>
-
-						<h5>Alternate</h5>
-						<div class="table-wrapper">
-							<table class="alt">
-								<thead>
-									<tr>
-										<th>Name</th>
-										<th>Description</th>
-										<th>Price</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Item One</td>
-										<td>Ante turpis integer aliquet porttitor.</td>
-										<td>29.99</td>
-									</tr>
-									<tr>
-										<td>Item Two</td>
-										<td>Vis ac commodo adipiscing arcu aliquet.</td>
-										<td>19.99</td>
-									</tr>
-									<tr>
-										<td>Item Three</td>
-										<td> Morbi faucibus arcu accumsan lorem.</td>
-										<td>29.99</td>
-									</tr>
-									<tr>
-										<td>Item Four</td>
-										<td>Vitae integer tempus condimentum.</td>
-										<td>19.99</td>
-									</tr>
-									<tr>
-										<td>Item Five</td>
-										<td>Ante turpis integer aliquet porttitor.</td>
-										<td>29.99</td>
-									</tr>
-								</tbody>
-								<tfoot>
-									<tr>
-										<td colspan="2"></td>
-										<td>100.00</td>
-									</tr>
-								</tfoot>
-							</table>
-						</div>
-					</section>
-
-					<section>
-						<h4>Buttons</h4>
-						<ul class="actions">
-							<li><a href="#" class="button special">Special</a></li>
-							<li><a href="#" class="button">Default</a></li>
-						</ul>
-						<ul class="actions">
-							<li><a href="#" class="button big">Big</a></li>
-							<li><a href="#" class="button">Default</a></li>
-							<li><a href="#" class="button small">Small</a></li>
-						</ul>
-						<ul class="actions fit">
-							<li><a href="#" class="button fit">Fit</a></li>
-							<li><a href="#" class="button special fit">Fit</a></li>
-							<li><a href="#" class="button fit">Fit</a></li>
-						</ul>
-						<ul class="actions fit small">
-							<li><a href="#" class="button special fit small">Fit + Small</a></li>
-							<li><a href="#" class="button fit small">Fit + Small</a></li>
-							<li><a href="#" class="button special fit small">Fit + Small</a></li>
-						</ul>
-						<ul class="actions">
-							<li><a href="#" class="button special icon fa-download">Icon</a></li>
-							<li><a href="#" class="button icon fa-download">Icon</a></li>
-						</ul>
-						<ul class="actions">
-							<li><span class="button special disabled">Disabled</span></li>
-							<li><span class="button disabled">Disabled</span></li>
-						</ul>
-					</section>
-
-					<section>
-						<h4>Form</h4>
-						<form method="post" action="#">
-							<div class="row uniform 50%">
-								<div class="6u 12u$(xsmall)">
-									<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
-								</div>
-								<div class="6u$ 12u$(xsmall)">
-									<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
-								</div>
-								<div class="12u$">
-									<div class="select-wrapper">
-										<select name="demo-category" id="demo-category">
-											<option value="">- Category -</option>
-											<option value="1">Manufacturing</option>
-											<option value="1">Shipping</option>
-											<option value="1">Administration</option>
-											<option value="1">Human Resources</option>
-										</select>
-									</div>
-								</div>
-								<div class="4u 12u$(small)">
-									<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-									<label for="demo-priority-low">Low</label>
-								</div>
-								<div class="4u 12u$(small)">
-									<input type="radio" id="demo-priority-normal" name="demo-priority">
-									<label for="demo-priority-normal">Normal</label>
-								</div>
-								<div class="4u$ 12u$(small)">
-									<input type="radio" id="demo-priority-high" name="demo-priority">
-									<label for="demo-priority-high">High</label>
-								</div>
-								<div class="6u 12u$(small)">
-									<input type="checkbox" id="demo-copy" name="demo-copy">
-									<label for="demo-copy">Email me a copy</label>
-								</div>
-								<div class="6u$ 12u$(small)">
-									<input type="checkbox" id="demo-human" name="demo-human" checked>
-									<label for="demo-human">Not a robot</label>
-								</div>
-								<div class="12u$">
-									<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-								</div>
-								<div class="12u$">
-									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="special" /></li>
-										<li><input type="reset" value="Reset" /></li>
-									</ul>
-								</div>
-							</div>
-						</form>
-					</section>
-
-					<section>
-						<h4>Image</h4>
-						<h5>Fit</h5>
-						<div class="box alt">
-							<div class="row uniform 50%">
-								<div class="12u"><span class="image fit"><img src="images/pic06.jpg" alt="" /></span></div>
-								<div class="4u"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-								<div class="4u"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-								<div class="4u"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
-								<div class="4u"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-								<div class="4u"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
-								<div class="4u"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-								<div class="4u"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
-								<div class="4u"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-								<div class="4u"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-							</div>
-						</div>
-						<h5>Left &amp; Right</h5>
-						<p><span class="image left"><img src="images/pic05.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-						<p><span class="image right"><img src="images/pic05.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-					</section>
-
-				</div>
-			</section>
-		-->
-
-		<!-- Footer -->
-			<section id="footer">
-				<ul class="icons">
-					<li><a href="https://twitter.com/athmapai" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
-					<!--<li><a href="#" class="icon alt fa-github"><span class="label">GitHub</span></a></li> -->
-				</ul>
-				<ul class="copyright">
-					<li>&copy; 2017 The Pai Lab</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-				</ul>
-			</section>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
-
-	</body>
+  </body>
 </html>
