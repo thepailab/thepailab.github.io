@@ -115,8 +115,12 @@
 		            <div class="small-12 medium-3 large-3 columns">
 		                <h2 class="panel-header">news</h2>
 		                <div class="news">
-		                  <!-- <p style="text-align:justify"><b>Aug20</b> Congrats to Hannah and Leslie for passing their qualifying exams! They're excited to continue work on RNA processing kinetics - with Hannah focusing on mutation-altered kinetics in cancer cells and Leslie on how RNA processing might underlie the timing of the circadian clock for their respective thesis research. -->
-		                  <p style="text-align:justify"><b>May20</b> Welcome to MD/PhD rotation student Ayush Kumar, who will be working with Eraj on noisy splicing analysis for the next month!
+		                  <p style="text-align:justify"><b>May21</b> The lab's first pre-print is posted on bioRxiv, a great collaboration with our friends from the Fiszbein (BU) and Burge (MIT) labs! We describe the HITindex, a new method to classify exon categories using short-read RNA-seq, and how we used it to characterize hybrid internal-terminal exons. Congrats to Ezequiel, Athma, and all other authors!
+		                  <p style="text-align:justify"><b>Apr21</b> Congrats to Ezequiel for passing his qualifying exam! He's excited to continue work on the co-regulation of transcription and termination for his thesis research!
+		                  <p style="text-align:justify"><b>Jan21</b> Happy New Year! Here's hoping for a less crazy 2021! To help us achieve that, we welcome a new administrative coordinator, Kathy Sloan!
+		                  <p style="text-align:justify"><b>Nov20</b> Welcome to Mustafa Malik Ghulam, a postdoc joining us after completing his PhD at University of Sherbrooke in Quebec, Canada. Mustafa will be joint between the Pai and Sontheimer labs - strengthening connections with our next door neighbors!
+		                  <p style="text-align:justify"><b>Aug20</b> Congrats to Hannah and Leslie for passing their qualifying exams! They're excited to continue work on RNA processing kinetics - with Hannah focusing on mutation-altered kinetics in cancer cells and Leslie on how RNA processing might underlie the timing of the circadian clock for their respective thesis research.
+		                  <p style="text-align:justify"><b>May20</b> Welcome to MD/PhD rotation student Ayush Kumar, who will be working remotely with Eraj on noisy splicing analysis for the next month!
 		                  <p style="text-align:justify"><b>Apr20</b> Some good news among the whirlwind of 2020 - Ezequiel Calvo Roitberg has officially joined the lab for his thesis research! Welcome Ezequiel!
 		                  <p style="text-align:justify"><b>Mar20</b> Wet lab work has been put on pause due to the ongoing pandemic, but our computational work continues from home. Sadly the third annual Pai Lab Pi Day Pie Pary has to be postponed - fingers crossed, we'll be back next year with a pie contest! #paipipie
 		                  <p style="text-align:justify"><b>Mar20</b> We've been funded by SLC6A1 Connect for a collaborative project with the Watts Lab to develop ASOs that target noisy splicing and up-regulate gene expression!
@@ -292,15 +296,25 @@
 				            <div class="row" data-equalizer> 
 				            </div>
 
-				            <div class="large-2 medium-3 small-4 columns medium-offset-3" data-equalizer-watch>
+				            <div class="large-2 medium-3 small-4 columns medium-offset-2" data-equalizer-watch>
+				              	<a data-reveal-id="mustafamalik"><img class="thumbnail profile frame-round" style="background-image: url('images/people/pictureNA.png');" />
+				                <h5 class="text-center profile-name"><b>Mustafa Malik Ghulam</b><br>Postdoctoral Researcher</h5></a>
+				            </div>
+
+				            <div class="large-2 medium-3 small-4 columns" data-equalizer-watch>
 				              	<a data-reveal-id="athmapai"><img class="thumbnail profile frame-round" style="background-image: url('images/people/athmapai.jpg');" />
 				                <h5 class="text-center profile-name"><b>Athma Pai</b><br>Principal Investigator</h5></a>
 				            </div>
 
-				            <div class="large-2 medium-3 small-4 columns" data-equalizer-watch>
+							<div class="large-2 medium-3 small-4 columns" data-equalizer-watch>
+				              	<a data-reveal-id="kathysloan"><img class="thumbnail profile frame-round" style="background-image: url('images/people/kathysloan.jpg');" />
+				              	<h5 class="text-center profile-name"><b>Kathy Sloan</b><br>Administrative Coordinator</h5></a>
+				            </div>
+
+				            <!--<div class="large-2 medium-3 small-4 columns" data-equalizer-watch>
 				              	<a data-reveal-id="annpowers"><img class="thumbnail profile frame-round" style="background-image: url('images/people/annpowers.jpg');" />
 				              	<h5 class="text-center profile-name"><b>Ann Powers</b><br>Administrative Coordinator</h5></a>
-				            </div>
+				            </div> -->
 
 				            <div class="large-2 medium-3 small-4 columns" data-equalizer-watch>
                                 <a data-reveal-id="leslietorresulloa"><img class="thumbnail profile frame-round" style="background-image: url('images/people/leslietorresulloa.jpg');" />
@@ -464,6 +478,28 @@
 		              <tbody>
 
 		                <!-- ***** preprints ***** -->
+		                <tr id="abstract" class="abstract-tooltip" data-number="32" data-title="Widespread occurrence of hybrid internal-terminal exons in human transcriptomes." data-authors="Fiszbein A, McGurk M, <b>Calvo-Roitberg E</b>, Kim GY, Burge CB, <b>Pai AA</b>" data-journal="bioRxiv" data-year="2021", data-volume="NA" data-pages="NA" data-url="https://www.biorxiv.org/content/10.1101/2021.05.27.446076v1.abstract" data-toc="tocs/fiszbein2021_toc.png", data-image="fiszbein2021_abstract.png" data-pdf="pdfs/fiszbein_biorxiv.pdf" data-abstract="<span style='color:#eee'> Alternative RNA processing is a major mechanism for diversifying the human transcriptome. Messenger RNA isoform differences are predominantly driven by alternative first exons, cassette internal exons and alternative last exons. Despite the importance of classifying exons to understand isoform structure, there is a lack of tools to look at isoform-specific exon usage using RNA-sequencing data. We recently observed that alternative transcription start sites often arise near annotated internal exons, creating “hybrid” exons that can be used as both first or internal exons. To investigate the creation of hybrid exons, we built the HIT (Hybrid-Internal-Terminal) exon pipeline that systematically classifies exons depending on their isoform-specific usage. Using a combination of junction reads coverage and probabilistic modeling, the HIT index identified thousands of hybrid first-internal and internal-last exons that were previously misclassified. Hybrid exons are enriched in long genes with at least ten internal exons, have longer flanking introns and strong splice sites. The usage of hybrid exons varies considerably across human tissues, but they are predominantly used in brain, testis and colon cells. Notably, genes involved in RNA splicing have the highest fraction of intra-tissue hybrid exons. Further, we found more than 100,000 inter-tissue hybrid exons that changed from internal to terminal exons across tissues. By developing the first method that can classify exons according to their isoform contexts, our findings demonstrate the existence of hybrid exons, expand the repertoire of tissue-specific terminal exons and uncover unexpected complexities of the human transcriptome.</span>">
+		                  <td class="fill-number"></td>
+		                  <td class="fill-toc"></td>
+		                  <td class="fill-authors"></td>
+		                  <td class="fill-title"></td>
+		                  <td class="fill-journal"></td>
+		                  <td class="fill-year"></td>
+		                  <td class="fill-link-button" id="url"></td>
+		                  <td class="fill-pdf-button" id="pdf"></td>
+		                </tr>		               
+
+		                <tr id="abstract" class="abstract-tooltip" data-number="31" data-title="Precision Cas9 genome editing in vivo with all-in-one, self-targeting AAV vectors." data-authors="Ibraheim R, Tai PWL, Mir A, <b>Javeed N</b>, Wang J, Rodriguez TC, Nelson S, <b>Khokhar E</b>, Mintzer M, Maitland S, Cao Y, Tsagkaraki E, Wolfe SA, Wang D, <b>Pai AA</b>, Xue W, Gao G, Sontheimer EJ" data-journal="bioRxiv" data-year="2020", data-volume="NA" data-pages="NA" data-url="https://www.biorxiv.org/content/10.1101/2020.10.09.333997v1.abstract" data-toc="tocs/dnarna_toc.png", data-image="dnarna_abstract.png" data-pdf="pdfs/ibraheim_biorxiv.pdf" data-abstract="<span style='color:#eee'> Adeno-associated virus (AAV) vectors are important delivery platforms for therapeutic genome editing but are severely constrained by cargo limits, especially for large effectors like Cas9s. Simultaneous delivery of multiple vectors can limit dose and efficacy and increase safety risks. The use of compact effectors has enabled single-AAV delivery of Cas9s with 1-3 guides for edits that use end-joining repair pathways, but many precise edits that correct disease-causing mutations in vivo require homology-directed repair (HDR) templates. Here, we describe single-vector, ~4.8-kb AAV platforms that express Nme2Cas9 and either two sgRNAs to produce segmental deletions, or a single sgRNA with an HDR template. We also examine the utility of Nme2Cas9 target sites in the vector for self-inactivation. We demonstrate that these platforms can effectively treat two disease models [type I hereditary tyrosinemia (HT-I) and mucopolysaccharidosis type I (MPS-I)] in mice. These results will enable single-vector AAVs to achieve diverse therapeutic genome editing outcomes.</span>">
+		                  <td class="fill-number"></td>
+		                  <td class="fill-toc"></td>
+		                  <td class="fill-authors"></td>
+		                  <td class="fill-title"></td>
+		                  <td class="fill-journal"></td>
+		                  <td class="fill-year"></td>
+		                  <td class="fill-link-button" id="url"></td>
+		                  <td class="fill-pdf-button" id="pdf"></td>
+		                </tr>		               
+
 
 		                <!-- ***** 2019 ***** -->
 		                <tr id="abstract" class="abstract-tooltip" data-number="30" data-title="A divalent siRNA chemical scaffold for potent and sustained modulation of gene expression throughout the central nervous system." data-authors="Alterman JF, Godinho BMDC, Hassler MR, Ferguson CM, Echeverria D, Sapp E, Haraszti RA, Coles AH, Conroy F, Miller R, Roux L, <b>Yan P</b>, Knox EG, Turanov AA, King RM, Gernoux G, Mueller C, Gray-Edwards HL, Moser RP, Bishop NC, Jaber SM, Gounis MJ, Sena-Esteves M, <b>Pai AA</b>, DiFiglia M, Aronin N and Khvorova A" data-journal="Nature Biotechnology" data-year="2019", data-volume="37" data-pages="884-894" data-url="https://www.nature.com/articles/s41587-019-0205-0" data-toc="tocs/dnarna_toc.png", data-image="dnarna_abstract.png" data-pdf="pdfs/alterman_2019.pdf" data-abstract="<span style='color:#eee'> Sustained silencing of gene expression throughout the brain using small interfering RNAs (siRNAs) has not been achieved. Here we describe an siRNA architecture, divalent siRNA (di-siRNA), that supports potent, sustained gene silencing in the central nervous system (CNS) of mice and nonhuman primates following a single injection into the cerebrospinal fluid. Di-siRNAs are composed of two fully chemically modified, phosphorothioate-containing siRNAs connected by a linker. In mice, di-siRNAs induced the potent silencing of huntingtin, the causative gene in Huntington’s disease, reducing messenger RNA and protein throughout the brain. Silencing persisted for at least 6 months, with the degree of gene silencing correlating to levels of guide strand tissue accumulation. In cynomolgus macaques, a bolus injection of di-siRNA showed substantial distribution and robust silencing throughout the brain and spinal cord without detectable toxicity and with minimal off-target effects. This siRNA design may enable RNA interference-based gene silencing in the CNS for the treatment of neurological disorders.</span>">
@@ -869,6 +905,12 @@
 	        Enjoying ice cream on Lake Quinsigamond (August 2019, missing: Nida)
 	      </div>
 	    </li>
+	    <li class="active">
+	      <img class="orbit-img" src="images/summer2021.JPG" />
+	      <div class="orbit-caption">
+	        First post-pandemic group social! (June 2021, missing: Ezequiel & Leslie)
+	      </div>
+	    </li>
 
 
 	    <!--<li>
@@ -896,7 +938,7 @@
 	        
 	        <div class="small-12 medium-4 large-4 columns">
 	          <div class="copyrights">
-	            <p>Copyright © 2018 the Pai Group.</p>
+	            <p>Copyright © 2021 the Pai Group.</p>
 	            <p><a href="https://stuff.mit.edu/~melville" class="web-credit">Web Design: Jo Melville</a></p>
 	            <p><a href="http://www.sabrinaprabhu.com/" class="web-credit">Logo Design: Sabrina Prabhu</a></p>
 	          </div>
@@ -934,8 +976,25 @@
 	    </div>
 	  </div>
 
+	  <!-- ***** KATHY SLOAN ***** -->
+	  <div class="small reveal-modal" id="kathysloan" data-reveal>
+	    <div class="row">
+	      <div class="large-5 columns">
+	        <img src="images/people/kathysloan.jpg" class="thumbnail profile-full" />
+	      </div>
+	      <div class="large-7 columns profile-box">
+	        <h2 class="full-profile-name text-center">Kathy Sloan</h2>
+	        <hr />
+	        <p class="lead text-center"><a href="mailto:kathryn.sloan@umassmed.edu">kathryn.sloan@umassmed.edu</a></p>
+	        <hr />
+	      </div>
+	      <!--<p class="profile-text">B.S. <i>Microbiology</i>, U. of California, Davis (2012)</p>-->
+	      <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+	    </div>
+	  </div>
+
 	  <!-- ***** ANN POWERS ***** -->
-	  <div class="small reveal-modal" id="annpowers" data-reveal>
+	  <!--<div class="small reveal-modal" id="annpowers" data-reveal>
 	    <div class="row">
 	      <div class="large-5 columns">
 	        <img src="images/people/annpowers.jpg" class="thumbnail profile-full" />
@@ -947,9 +1006,10 @@
 	        <hr />
 	      </div>
 	      <!--<p class="profile-text">B.S. <i>Microbiology</i>, U. of California, Davis (2012)</p>-->
-	      <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+	      <!--<a class="close-reveal-modal" aria-label="Close">&#215;</a>
 	    </div>
-	  </div>
+	  </div>-->
+
 
 	  <!-- ***** NIDA JAVEED ***** -->
 	  <div class="small reveal-modal" id="nidajaveed" data-reveal>
@@ -1049,6 +1109,23 @@
 	        <hr />
 	      </div>
 	      <p class="profile-text">B.S. <i>Biology</i>, SBASSE @ Lahore University of Management Sciences, Lahore, Pakistan (2013)<br />Ph.D. <i>Biomedical Sciences</i>, The Jackson Laboratories & University of Maine (2019)</p>
+	      <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+	    </div>
+	  </div>
+
+	  <!-- ***** Mustafa Malik Ghulam ***** -->
+	  <div class="small reveal-modal" id="mustafamalik" data-reveal>
+	    <div class="row">
+	      <div class="large-5 columns">
+	        <img src="images/people/pictureNA.png" class="thumbnail profile-full" />
+	      </div>
+	      <div class="large-7 columns profile-box">
+	        <h2 class="full-profile-name text-center">Mustafa Malik Ghulam</h2>
+	        <hr />
+	        <p class="lead text-center"><a href="mailto:mustafa.malikghulam3@umassmed.edu">mustafa.malikghulam3@umassmed.edu</a></p>
+	        <hr />
+	      </div>
+	      <p class="profile-text"><b>Joint with Sontheimer Lab</b><br />B.Sc. <i>Agricultural Entomology</i>, University of Agriculture, Faisalabad, Pakistan (2003)<br />Ph.D. School of Chemistry & Life Science, University of Grenoble, France (2010)<br />Ph.D. Department of Microbiology & Infectiology, University of Sherbrooke, Quebec, Canada (2019)</p>
 	      <a class="close-reveal-modal" aria-label="Close">&#215;</a>
 	    </div>
 	  </div>
