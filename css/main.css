@@ -513,7 +513,7 @@ span.anchor {
 	   background-size: cover; 
 }
 
-.contact{
+.photos{
 	padding: 1rem 0;
 	/*background: url('https://unsplash.it/1920/1080?image=10') no-repeat 50% 50%;*/
 	background: rgba(61,143,205,1);
@@ -523,6 +523,17 @@ span.anchor {
 	-o-background-size: cover;
 	   background-size: cover; 
 }
+
+/*.contact{
+	padding: 1rem 0;
+	/*background: url('https://unsplash.it/1920/1080?image=10') no-repeat 50% 50%;*/
+/*	background: rgba(61,143,205,1);
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	   background-size: cover; 
+} */
 
 
 button, .button {
