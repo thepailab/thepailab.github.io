@@ -18,8 +18,17 @@ PIE: Pai Pi Pie Day
 
 2026
 
+bi-newspaper
+NOW OUT in <a href="" target="_blank">Molecular Cell</a>, our study identifying and characterizing extensive cryptic splicing in human cells, the result of a long-standing with our colleagues in the Watts lab! Congrats to Eraj and Kaitlyn!
+
+bi-currency-dollar
+Congrats to Eva Jazbec for being awarded an NRSA Fellowship (F31) from NIAID to continue her work on characterizing snRNA expression and biogenesis.
+
+Bi-award
+Congrats to Eva Jazbec winning a prize for one of the best posters at the 2026 Post-transcriptional Gene Regulation Gordon Research Conference in Portland, Maine. The lab loves this conference and will be in full force for the upcoming meetings to support Athma in her new role as incoming Vice-Chair(2028) and Chair (2030) of this GRC.
+
 bi-mortarboard
-Mar26. Sad to say goodbye to postdoc Eraj Khokhar, who will be...
+Mar26. Sad to say goodbye to postdoc, Eraj Khokhar, who is moving back to Pakistan to start new scientific endeavors! We wish him the best in this transition and look forward to continued [remote] scientific interactions!
 
 bi-people
 Jan26. We're excited to welcome Kelly Cochran as a new postdoc in the lab, joint with the Scharfen lab! She is joining us after completing her PhD with Anshul Kundaje at Stanford, working on machine learning methods to predict transcriptional mechanisms.
